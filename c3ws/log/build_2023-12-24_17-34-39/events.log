@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000711] (wali) JobQueued: {'identifier': 'wali', 'dependencies': OrderedDict()}
+[0.001112] (wali) JobStarted: {'identifier': 'wali'}
+[0.099685] (-) TimerEvent: {}
+[0.199981] (-) TimerEvent: {}
+[0.300212] (-) TimerEvent: {}
+[0.400373] (-) TimerEvent: {}
+[0.500560] (-) TimerEvent: {}
+[0.600740] (-) TimerEvent: {}
+[0.700905] (-) TimerEvent: {}
+[0.801057] (-) TimerEvent: {}
+[0.901211] (-) TimerEvent: {}
+[1.001415] (-) TimerEvent: {}
+[1.101610] (-) TimerEvent: {}
+[1.201860] (-) TimerEvent: {}
+[1.302052] (-) TimerEvent: {}
+[1.402240] (-) TimerEvent: {}
+[1.502452] (-) TimerEvent: {}
+[1.602636] (-) TimerEvent: {}
+[1.702820] (-) TimerEvent: {}
+[1.803024] (-) TimerEvent: {}
+[1.903246] (-) TimerEvent: {}
+[2.003411] (-) TimerEvent: {}
+[3.983497] (-) TimerEvent: {}
+[4.083759] (-) TimerEvent: {}
+[4.183957] (-) TimerEvent: {}
+[4.284135] (-) TimerEvent: {}
+[4.384305] (-) TimerEvent: {}
+[4.484479] (-) TimerEvent: {}
+[4.584698] (-) TimerEvent: {}
+[4.684955] (-) TimerEvent: {}
+[4.785279] (-) TimerEvent: {}
+[4.885581] (-) TimerEvent: {}
+[4.985819] (-) TimerEvent: {}
+[5.086103] (-) TimerEvent: {}
+[5.186358] (-) TimerEvent: {}
+[5.286623] (-) TimerEvent: {}
+[5.386851] (-) TimerEvent: {}
+[5.487106] (-) TimerEvent: {}
+[5.587407] (-) TimerEvent: {}
+[5.687613] (-) TimerEvent: {}
+[5.787902] (-) TimerEvent: {}
+[5.888104] (-) TimerEvent: {}
+[5.988440] (-) TimerEvent: {}
+[6.088669] (-) TimerEvent: {}
+[6.189006] (-) TimerEvent: {}
+[6.289258] (-) TimerEvent: {}
+[6.389619] (-) TimerEvent: {}
+[6.489851] (-) TimerEvent: {}
+[6.590525] (-) TimerEvent: {}
+[6.690797] (-) TimerEvent: {}
+[6.791083] (-) TimerEvent: {}
+[6.891389] (-) TimerEvent: {}
+[6.991798] (-) TimerEvent: {}
+[7.092104] (-) TimerEvent: {}
+[7.192493] (-) TimerEvent: {}
+[7.292876] (-) TimerEvent: {}
+[7.393198] (-) TimerEvent: {}
+[7.493509] (-) TimerEvent: {}
+[7.593842] (-) TimerEvent: {}
+[7.688499] (wali) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/pi/wali_pi5/c3ws/build/wali/build', '--no-deps', 'install_data'], 'cwd': '/home/pi/wali_pi5/c3ws/build/wali', 'env': {'HOSTNAME': 'WaLiPi5', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/wali_pi5/c3ws', 'ROS_PYTHON_VERSION': '3', 'ROS_LOG_DIR': '/home/pi/wali_pi5/c3ws/roslogs', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/home/pi/wali_pi5/c3ws/build/wali', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/pi/wali_pi5/c3ws/build/wali/prefix_override:/home/pi/wali_pi5/c3ws/install/wali/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[7.693951] (-) TimerEvent: {}
+[7.794267] (-) TimerEvent: {}
+[7.894639] (-) TimerEvent: {}
+[7.965737] (wali) StdoutLine: {'line': b'running develop\n'}
+[7.968143] (wali) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.968274] (wali) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.970439] (wali) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.970520] (wali) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.994698] (-) TimerEvent: {}
+[8.094993] (-) TimerEvent: {}
+[8.111014] (wali) StdoutLine: {'line': b'running egg_info\n'}
+[8.111314] (wali) StdoutLine: {'line': b'creating wali.egg-info\n'}
+[8.111434] (wali) StdoutLine: {'line': b'writing wali.egg-info/PKG-INFO\n'}
+[8.111754] (wali) StdoutLine: {'line': b'writing dependency_links to wali.egg-info/dependency_links.txt\n'}
+[8.111956] (wali) StdoutLine: {'line': b'writing entry points to wali.egg-info/entry_points.txt\n'}
+[8.112090] (wali) StdoutLine: {'line': b'writing requirements to wali.egg-info/requires.txt\n'}
+[8.112195] (wali) StdoutLine: {'line': b'writing top-level names to wali.egg-info/top_level.txt\n'}
+[8.112423] (wali) StdoutLine: {'line': b"writing manifest file 'wali.egg-info/SOURCES.txt'\n"}
+[8.115118] (wali) StdoutLine: {'line': b"reading manifest file 'wali.egg-info/SOURCES.txt'\n"}
+[8.115824] (wali) StdoutLine: {'line': b"writing manifest file 'wali.egg-info/SOURCES.txt'\n"}
+[8.117598] (wali) StdoutLine: {'line': b'running build_ext\n'}
+[8.117896] (wali) StdoutLine: {'line': b'Creating /home/pi/wali_pi5/c3ws/install/wali/lib/python3.10/site-packages/wali.egg-link (link to .)\n'}
+[8.118875] (wali) StdoutLine: {'line': b'Installing battery_sub script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali\n'}
+[8.119101] (wali) StdoutLine: {'line': b'Installing sub_ir script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali\n'}
+[8.119323] (wali) StdoutLine: {'line': b'Installing vel_pwr_test script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali\n'}
+[8.119438] (wali) StdoutLine: {'line': b'Installing wali_node script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali\n'}
+[8.119659] (wali) StdoutLine: {'line': b'\n'}
+[8.119766] (wali) StdoutLine: {'line': b'Installed /home/pi/wali_pi5/c3ws/build/wali\n'}
+[8.119834] (wali) StdoutLine: {'line': b'running install_data\n'}
+[8.119933] (wali) StdoutLine: {'line': b'creating /home/pi/wali_pi5/c3ws/install/wali/share/ament_index\n'}
+[8.120001] (wali) StdoutLine: {'line': b'creating /home/pi/wali_pi5/c3ws/install/wali/share/ament_index/resource_index\n'}
+[8.120101] (wali) StdoutLine: {'line': b'creating /home/pi/wali_pi5/c3ws/install/wali/share/ament_index/resource_index/packages\n'}
+[8.120169] (wali) StdoutLine: {'line': b'copying resource/wali -> /home/pi/wali_pi5/c3ws/install/wali/share/ament_index/resource_index/packages\n'}
+[8.120266] (wali) StdoutLine: {'line': b'copying package.xml -> /home/pi/wali_pi5/c3ws/install/wali/share/wali\n'}
+[8.120364] (wali) StdoutLine: {'line': b'copying wali/create3_ir_dist.py -> /home/pi/wali_pi5/c3ws/install/wali/lib/wali\n'}
+[8.187946] (wali) CommandEnded: {'returncode': 0}
+[8.195073] (-) TimerEvent: {}
+[8.263621] (wali) JobEnded: {'identifier': 'wali', 'rc': 0}
+[8.265019] (-) EventReactorShutdown: {}

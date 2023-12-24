@@ -1,0 +1,9 @@
+source;share/wali/hook/pythonpath.ps1
+source;share/wali/hook/pythonpath.dsv
+source;share/wali/hook/pythonpath.sh
+source;share/wali/hook/ament_prefix_path.ps1
+source;share/wali/hook/ament_prefix_path.dsv
+source;share/wali/hook/ament_prefix_path.sh
+source;../../build/wali/share/wali/hook/pythonpath_develop.ps1
+source;../../build/wali/share/wali/hook/pythonpath_develop.dsv
+source;../../build/wali/share/wali/hook/pythonpath_develop.sh

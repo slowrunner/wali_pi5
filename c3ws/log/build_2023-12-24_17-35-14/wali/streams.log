@@ -1,0 +1,24 @@
+[0.791s] Invoking command in '/home/pi/wali_pi5/c3ws/build/wali': PYTHONPATH=/home/pi/wali_pi5/c3ws/build/wali/prefix_override:/home/pi/wali_pi5/c3ws/install/wali/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/wali_pi5/c3ws/build/wali/build --no-deps install_data
+[1.069s] running develop
+[1.070s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.070s]   warnings.warn(
+[1.071s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.072s]   warnings.warn(
+[1.214s] running egg_info
+[1.214s] writing wali.egg-info/PKG-INFO
+[1.214s] writing dependency_links to wali.egg-info/dependency_links.txt
+[1.214s] writing entry points to wali.egg-info/entry_points.txt
+[1.214s] writing requirements to wali.egg-info/requires.txt
+[1.215s] writing top-level names to wali.egg-info/top_level.txt
+[1.217s] reading manifest file 'wali.egg-info/SOURCES.txt'
+[1.218s] writing manifest file 'wali.egg-info/SOURCES.txt'
+[1.219s] running build_ext
+[1.220s] Creating /home/pi/wali_pi5/c3ws/install/wali/lib/python3.10/site-packages/wali.egg-link (link to .)
+[1.221s] Installing battery_sub script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+[1.221s] Installing sub_ir script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+[1.221s] Installing vel_pwr_test script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+[1.221s] Installing wali_node script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+[1.221s] 
+[1.221s] Installed /home/pi/wali_pi5/c3ws/build/wali
+[1.221s] running install_data
+[1.289s] Invoked command in '/home/pi/wali_pi5/c3ws/build/wali' returned '0': PYTHONPATH=/home/pi/wali_pi5/c3ws/build/wali/prefix_override:/home/pi/wali_pi5/c3ws/install/wali/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/wali_pi5/c3ws/build/wali/build --no-deps install_data

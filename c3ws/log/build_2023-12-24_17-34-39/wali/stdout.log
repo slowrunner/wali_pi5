@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating wali.egg-info
+writing wali.egg-info/PKG-INFO
+writing dependency_links to wali.egg-info/dependency_links.txt
+writing entry points to wali.egg-info/entry_points.txt
+writing requirements to wali.egg-info/requires.txt
+writing top-level names to wali.egg-info/top_level.txt
+writing manifest file 'wali.egg-info/SOURCES.txt'
+reading manifest file 'wali.egg-info/SOURCES.txt'
+writing manifest file 'wali.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pi/wali_pi5/c3ws/install/wali/lib/python3.10/site-packages/wali.egg-link (link to .)
+Installing battery_sub script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+Installing sub_ir script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+Installing vel_pwr_test script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+Installing wali_node script to /home/pi/wali_pi5/c3ws/install/wali/lib/wali
+
+Installed /home/pi/wali_pi5/c3ws/build/wali
+running install_data
+creating /home/pi/wali_pi5/c3ws/install/wali/share/ament_index
+creating /home/pi/wali_pi5/c3ws/install/wali/share/ament_index/resource_index
+creating /home/pi/wali_pi5/c3ws/install/wali/share/ament_index/resource_index/packages
+copying resource/wali -> /home/pi/wali_pi5/c3ws/install/wali/share/ament_index/resource_index/packages
+copying package.xml -> /home/pi/wali_pi5/c3ws/install/wali/share/wali
+copying wali/create3_ir_dist.py -> /home/pi/wali_pi5/c3ws/install/wali/lib/wali
