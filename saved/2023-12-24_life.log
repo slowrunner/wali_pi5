@@ -1,32 +1,6 @@
 # ******  Create3-WaLi life.log  ******* 
 # ** First "life" 2023-12-11 
-2023-11-28 17:43|------------ boot ------------
-2023-11-28 17:49|------------ boot ------------
-2023-11-28 17:55|[logMaintenance.py.main]** crontab setup for life logging **
-2023-11-28 18:46|lifelogger.dEmain execution: 0.95
-2023-11-28 18:49|------------ boot ------------
-2023-11-28 18:53|------------ boot ------------
-2023-11-28 18:55|------------ boot ------------
-2023-11-28 19:31|lifelogger.dEmain execution: 0.60
-2023-11-28 19:33|[logMaintenance.py.main]** Setup ip_feedback **
-2023-11-28 19:42|------------ boot ------------
-2023-11-28 19:45|lifelogger.dEmain execution: 2.5
-2023-11-28 22:10|------------ boot ------------
-2023-12-01 08:31|lifelogger.dEmain execution: 58.35
-2023-12-01 08:33|[logMaintenance.py.main]** was running on Apple iPad USB-C supply, switching **
-2023-12-01 08:36|------------ boot ------------
-2023-12-01 09:03|lifelogger.dEmain execution: 0.45
-2023-12-01 09:05|------------ boot ------------
-2023-12-04 14:46|[logMaintenance.py.main]** Going down to add power meter **
-2023-12-04 14:47|lifelogger.dEmain execution: 77.70
-2023-12-04 14:49|------------ boot ------------
-2023-12-04 16:29|[logMaintenance.py.main]** async_slam uses 1% cpu 500MB 3W **
-2023-12-04 17:43|lifelogger.dEmain execution: 2.90
-2023-12-05 08:04|------------ boot ------------
-2023-12-05 08:08|------------ boot ------------
-2023-12-05 23:32|lifelogger.dEmain execution: 15.40
 2023-12-11 09:17|------------ boot ------------
-2023-12-11 19:14|lifelogger.dEmain execution: 9.95
 2023-12-13 12:13|wali_node.py| ** WaLI node started **
 2023-12-13 12:19|wali_node.py| ** WaLI node started **
 2023-12-13 12:20|wali_node.py| ** WaLI Undocking: success at battery 100% **
@@ -57,6 +31,7 @@
 2023-12-15 22:44|vel_pwr_test.py| ** vel_pwr_test started **
 2023-12-15 22:52|vel_pwr_test.py| ** vel_pwr_test started **
 2023-12-15 23:11|wali_node.py| ** WaLI node started - Dock below 10% **
+2023-12-16 17:58|lifelogger.dEmain execution: 125.0
 2023-12-16 17:58|------------ boot ------------
 2023-12-16 03:37|wali_node.py| ** WaLI Docking: success at battery 8% **
 2023-12-16 05:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
@@ -73,18 +48,19 @@
 2023-12-16 23:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
 2023-12-17 07:13|lifelogger.dEmain execution: 13.25
 2023-12-17 07:15|[logMaintenance.py.main]** Going down to add power meter **
-2023-12-17 07:18|------------ boot ------------
-2023-12-17 07:36|lifelogger.dEmain execution: 0.30
-2023-12-17 07:39|------------ boot ------------
-2023-12-17 12:24|lifelogger.dEmain execution: 4.75
-2023-12-17 13:14|------------ boot ------------
 2023-12-17 02:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-17 02:10|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-17 04:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 07:15|[logMaintenance.py.main]** wali_node error forced Create3 safety shutdown **
+2023-12-17 07:18|------------ boot ------------
 2023-12-17 07:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-17 07:26|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 07:36|lifelogger.dEmain execution: 0.30
+2023-12-17 07:39|------------ boot ------------
 2023-12-17 09:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
 2023-12-17 09:40|[logMaintenance.py.main]** Reset Pose 0,0 0deg **
+2023-12-17 12:24|lifelogger.dEmain execution: 4.75
+2023-12-17 13:14|------------ boot ------------
 2023-12-17 13:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-17 13:20|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-17 15:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
@@ -94,20 +70,18 @@
 2023-12-17 23:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-17 23:52|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-18 00:35|lifelogger.dEmain execution: 11.35
-2023-12-18 09:22|------------ boot ------------
-2023-12-18 09:28|lifelogger.dEmain execution: 0.10
-2023-12-18 09:38|------------ boot ------------
-2023-12-18 09:50|lifelogger.dEmain execution: 0.20
-2023-12-18 10:16|------------ boot ------------
-2023-12-18 12:01|lifelogger.dEmain execution: 1.75
-2023-12-18 12:04|------------ boot ------------
-2023-12-18 22:13|lifelogger.dEmain execution: 10.15
-2023-12-18 22:20|------------ boot ------------
 2023-12-18 01:38|wali_node.py| ** WaLI Undocking: success at battery 100% **
 2023-12-18 07:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-18 07:35|wali_node.py| ** WaLI Docking: success at battery 14% **
-2023-12-18 09:11|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 09:22|------------ boot ------------
+2023-12-18 09:28|lifelogger.dEmain execution: 0.10
 2023-12-18 09:30|[logMaintenance.py.main]** ran pi5 load test **
+2023-12-18 09:38|------------ boot ------------
+2023-12-18 09:50|lifelogger.dEmain execution: 0.20
+2023-12-18 09:11|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 10:16|------------ boot ------------
+2023-12-18 12:01|lifelogger.dEmain execution: 1.75
+2023-12-18 12:04|------------ boot ------------
 2023-12-18 12:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-18 12:13|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-18 12:14|[logMaintenance.py.main]** Pi5 running with Oak-D-Lite and speaker on Pi5: 3.4W idle 9.5W running depthai_demo **
@@ -115,9 +89,10 @@
 2023-12-18 17:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-18 17:31|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-18 19:43|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 22:13|lifelogger.dEmain execution: 10.15
+2023-12-18 22:20|------------ boot ------------
 2023-12-18 22:48|wali_node.py| ** WaLI node started - Dock below 15% **
 2023-12-19 04:35|lifelogger.dEmain execution: 6.25
-2023-12-17 07:15|[logMaintenance.py.main]** wali_node error forced Create3 safety shutdown **
 2023-12-19 08:02|------------ boot ------------
 2023-12-19 00:32|[logMaintenance.py.main]** Switching To ROS 2 Humble **
 2023-12-19 00:22|wali_node.py| ** WaLI node started - Dock below 15% **
@@ -188,21 +163,19 @@
 2023-12-23 20:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
 2023-12-23 23:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-23 23:25|wali_node.py| ** WaLI Docking: success at battery 14% **
-2023-12-24 09:49|lifelogger.dEmain execution: 86.55
-2023-12-24 10:29|------------ boot ------------
-2023-12-24 10:35|lifelogger.dEmain execution: 0.10
-2023-12-24 10:37|------------ boot ------------
 2023-12-24 01:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
 2023-12-24 04:51|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-24 04:58|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-24 06:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 09:49|lifelogger.dEmain execution: 86.55
+2023-12-24 10:29|------------ boot ------------
+2023-12-24 10:35|lifelogger.dEmain execution: 0.10
+2023-12-24 10:37|------------ boot ------------
 2023-12-24 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2023-12-24 10:43|wali_node.py| ** WaLI Docking: success at battery 14% **
 2023-12-24 12:31|[logMaintenance.py.main]** ****** CUTOVER FROM WALI_NODE ON DESKTOP TO WALI_PI5 **
 2023-12-24 12:31|lifelogger.dEmain execution: 1.90
-
 2023-12-24 12:34|------------ boot ------------
 2023-12-24 17:37|wali_node.py| ** WaLI node started - Dock below 15% **
-2023-12-24 12:37|lifelogger.dEmain execution: 0.05
-2023-12-24 12:40|lifelogger.dEmain execution: 0.10
-2023-12-24 12:43|lifelogger.dEmain execution: 0.15
+2023-12-24 17:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 13:46|lifelogger.dEmain execution: 1.20
