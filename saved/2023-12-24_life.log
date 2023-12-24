@@ -1,0 +1,208 @@
+# ******  Create3-WaLi life.log  ******* 
+# ** First "life" 2023-12-11 
+2023-11-28 17:43|------------ boot ------------
+2023-11-28 17:49|------------ boot ------------
+2023-11-28 17:55|[logMaintenance.py.main]** crontab setup for life logging **
+2023-11-28 18:46|lifelogger.dEmain execution: 0.95
+2023-11-28 18:49|------------ boot ------------
+2023-11-28 18:53|------------ boot ------------
+2023-11-28 18:55|------------ boot ------------
+2023-11-28 19:31|lifelogger.dEmain execution: 0.60
+2023-11-28 19:33|[logMaintenance.py.main]** Setup ip_feedback **
+2023-11-28 19:42|------------ boot ------------
+2023-11-28 19:45|lifelogger.dEmain execution: 2.5
+2023-11-28 22:10|------------ boot ------------
+2023-12-01 08:31|lifelogger.dEmain execution: 58.35
+2023-12-01 08:33|[logMaintenance.py.main]** was running on Apple iPad USB-C supply, switching **
+2023-12-01 08:36|------------ boot ------------
+2023-12-01 09:03|lifelogger.dEmain execution: 0.45
+2023-12-01 09:05|------------ boot ------------
+2023-12-04 14:46|[logMaintenance.py.main]** Going down to add power meter **
+2023-12-04 14:47|lifelogger.dEmain execution: 77.70
+2023-12-04 14:49|------------ boot ------------
+2023-12-04 16:29|[logMaintenance.py.main]** async_slam uses 1% cpu 500MB 3W **
+2023-12-04 17:43|lifelogger.dEmain execution: 2.90
+2023-12-05 08:04|------------ boot ------------
+2023-12-05 08:08|------------ boot ------------
+2023-12-05 23:32|lifelogger.dEmain execution: 15.40
+2023-12-11 09:17|------------ boot ------------
+2023-12-11 19:14|lifelogger.dEmain execution: 9.95
+2023-12-13 12:13|wali_node.py| ** WaLI node started **
+2023-12-13 12:19|wali_node.py| ** WaLI node started **
+2023-12-13 12:20|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-13 12:57|[logMaintenance.py.main]** CPU usage: max 90 [%] mean 67 [%] RAM usage: 29/59 [MB] **
+2023-12-13 13:14|[logMaintenance.py.main]** undocked pose: x: 0.109  y: 0.002  oz: -0.0228 (-1 deg) **
+2023-12-13 13:57|[logMaintenance.py.main]** Create3 Idle 3.4W 34C **
+2023-12-13 17:15|[logMaintenance.py.main]** Create3 Idle 3.4W 14.48v 43% **
+2023-12-13 19:44|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-13 21:21|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-14 05:02|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-14 06:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-14 14:21|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-14 15:59|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-14 23:38|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-15 01:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-15 08:56|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-15 10:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-15 17:30|[logMaintenance.py.main]** kidnapped while cleaning house **
+2023-12-15 18:13|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-15 18:26|[logMaintenance.py.main]** Stopped Wali_node on dock to change dock lower limit for testing **
+2023-12-15 18:28|[logMaintenance.py.main]** Testing Wali_node with 10% dock-now lower-limit **
+2023-12-15 18:36|wali_node.py| ** WaLI node started - Dock below 10% **
+2023-12-15 19:51|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-15 22:32|[logMaintenance.py.main]** wali_node stopped **
+2023-12-15 22:33|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:36|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:38|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:44|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:52|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 23:11|wali_node.py| ** WaLI node started - Dock below 10% **
+2023-12-16 17:58|------------ boot ------------
+2023-12-16 03:37|wali_node.py| ** WaLI Docking: success at battery 8% **
+2023-12-16 05:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-16 11:54|[logMaintenance.py.main]** performed several nav to pos, reset pose **
+2023-12-16 12:46|[logMaintenance.py.main]** flashing red 10.9% **
+2023-12-16 12:52|wali_node.py| ** WaLI Docking: success at battery 9% **
+2023-12-16 14:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-16 14:54|[logMaintenance.py.main]** Shutdown for USB Hub Installation **
+2023-12-16 17:34|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-16 17:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-16 20:45|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-16 20:52|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-16 21:05|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-16 23:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 07:13|lifelogger.dEmain execution: 13.25
+2023-12-17 07:15|[logMaintenance.py.main]** Going down to add power meter **
+2023-12-17 07:18|------------ boot ------------
+2023-12-17 07:36|lifelogger.dEmain execution: 0.30
+2023-12-17 07:39|------------ boot ------------
+2023-12-17 12:24|lifelogger.dEmain execution: 4.75
+2023-12-17 13:14|------------ boot ------------
+2023-12-17 02:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 02:10|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 04:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 07:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 07:26|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 09:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 09:40|[logMaintenance.py.main]** Reset Pose 0,0 0deg **
+2023-12-17 13:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 13:20|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 15:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 18:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 18:38|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 20:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 23:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 23:52|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 00:35|lifelogger.dEmain execution: 11.35
+2023-12-18 09:22|------------ boot ------------
+2023-12-18 09:28|lifelogger.dEmain execution: 0.10
+2023-12-18 09:38|------------ boot ------------
+2023-12-18 09:50|lifelogger.dEmain execution: 0.20
+2023-12-18 10:16|------------ boot ------------
+2023-12-18 12:01|lifelogger.dEmain execution: 1.75
+2023-12-18 12:04|------------ boot ------------
+2023-12-18 22:13|lifelogger.dEmain execution: 10.15
+2023-12-18 22:20|------------ boot ------------
+2023-12-18 01:38|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 07:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-18 07:35|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 09:11|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 09:30|[logMaintenance.py.main]** ran pi5 load test **
+2023-12-18 12:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-18 12:13|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 12:14|[logMaintenance.py.main]** Pi5 running with Oak-D-Lite and speaker on Pi5: 3.4W idle 9.5W running depthai_demo **
+2023-12-18 14:23|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 17:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-18 17:31|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 19:43|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 22:48|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-19 04:35|lifelogger.dEmain execution: 6.25
+2023-12-17 07:15|[logMaintenance.py.main]** wali_node error forced Create3 safety shutdown **
+2023-12-19 08:02|------------ boot ------------
+2023-12-19 00:32|[logMaintenance.py.main]** Switching To ROS 2 Humble **
+2023-12-19 00:22|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-19 00:24|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-19 00:44|[logMaintenance.py.main]** Create3-Wali updated to H.2.3 F/W **
+2023-12-19 00:45|[logMaintenance.py.main]** wali_node.py updated to Humble (DockServo->Dock) **
+2023-12-19 08:11|[logMaintenance.py.main]** Error in wali_node.py caused safety shutdown **
+2023-12-19 10:40|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-19 10:41|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-19 14:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-19 14:14|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-19 16:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-19 19:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-19 19:51|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-19 21:49|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 19:14|lifelogger.dEmain execution: 35.20
+2023-12-20 19:16|------------ boot ------------
+2023-12-20 01:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 01:29|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 03:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 06:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 07:06|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 09:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 12:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 12:41|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 14:38|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 18:09|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 18:17|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 20:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 23:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 23:51|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 01:50|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 05:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 05:23|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 07:22|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 10:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 10:54|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 13:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 16:24|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 16:31|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 18:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 21:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 22:01|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 00:00|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 03:26|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 03:33|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 05:32|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 08:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 09:04|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 11:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 14:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 14:35|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 16:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 19:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 20:04|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 22:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 01:27|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 01:34|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 03:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 06:58|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 07:05|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 09:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 12:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 12:36|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 14:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 17:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 18:06|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 20:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 23:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 23:25|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-24 09:49|lifelogger.dEmain execution: 86.55
+2023-12-24 10:29|------------ boot ------------
+2023-12-24 10:35|lifelogger.dEmain execution: 0.10
+2023-12-24 10:37|------------ boot ------------
+2023-12-24 01:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 04:51|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-24 04:58|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-24 06:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-24 10:43|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-24 12:31|[logMaintenance.py.main]** ****** CUTOVER FROM WALI_NODE ON DESKTOP TO WALI_PI5 **
+2023-12-24 12:31|lifelogger.dEmain execution: 1.90
+
+2023-12-24 12:34|------------ boot ------------
+2023-12-24 17:37|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-24 12:37|lifelogger.dEmain execution: 0.05
+2023-12-24 12:40|lifelogger.dEmain execution: 0.10
+2023-12-24 12:43|lifelogger.dEmain execution: 0.15
