@@ -51,3 +51,4 @@ qtcreator-*
 CATKIN_IGNORE
 
 c3ws/roslogs
+.log
