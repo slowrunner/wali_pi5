@@ -1,0 +1,7 @@
+[all]
+
+# Enable full 1.6A output to USB ports
+usb_max_current_enable=1
+
+# enable RTC backup battery charge voltage
+dtparam=rtc_bbat_vchg=3000000
