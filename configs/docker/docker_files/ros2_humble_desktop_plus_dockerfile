@@ -35,3 +35,5 @@ USER pi:pi
 RUN sudo pip3 install evdev
 
 # NOTE: joystick access will require docker running in --privileged mode
+
+CMD bash -c "source start_wali.sh"

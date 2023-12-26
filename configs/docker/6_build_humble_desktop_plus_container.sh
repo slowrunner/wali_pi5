@@ -9,4 +9,4 @@
 
 
 # build a ros humble desktop plus navigation, slam-toolbox, localization tagged r2hdp
-sudo docker build . -t r2hdp -f docker_files/ros2_humble_desktop_plus_dockerfile
+sudo docker build --no-cache . -t r2hdp -f docker_files/ros2_humble_desktop_plus_dockerfile

@@ -1,0 +1,13 @@
+[Unit]
+Description=ROS 2 Humble Desktop Plus For WaLi Service
+After=syslog.target network.target
+
+
+[Service]
+Type=simple
+user=pi
+WorkingDirectory=/home/pi/wali_pi5/c3ws
+ExecStart=/bin/bash /home/pi/wali_pi5/configs/docker/start_docker_detached_r2hdp.sh
+
+[Install]
+WantedBy=multi-user.target

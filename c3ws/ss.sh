@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 if [ $ROS_DISTRO == "galactic" ]; then
     source /opt/ros/galactic/setup.bash
@@ -6,5 +7,5 @@ if [ $ROS_DISTRO == "galactic" ]; then
     source /opt/ros/humble/setup.bash
 fi
 
-source ~/wali_desk/c3ws/install/setup.bash
+source ~/wali_pi5/c3ws/install/setup.bash
 
