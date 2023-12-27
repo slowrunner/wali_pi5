@@ -22,6 +22,7 @@ setup(
     entry_points={
         'console_scripts': [
             'wali_node = wali.wali_node:main',
+            'test_wali_node = wali.test_wali_node:main',
             'vel_pwr_test = wali.vel_pwr_test:main',
             'battery_sub = wali.battery_sub:main',
             'sub_ir = wali.sub_ir:main'

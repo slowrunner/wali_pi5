@@ -5,11 +5,12 @@
 """
     Make WaLI A 24/7 Autonomous Robot
     - Logs WaLI_node started to life.log
-    - subscribes to Create3 /battery_state and /dock (_status)
-    - publishes /undock action goal when BatteryState.percentage = 1.0
+    - subscribes to Create3 /battery_state and /dock_status
+    - publishes /undock action goal when BatteryState.percentage full
     - Logs successful undock to life.log
-    - publishes /rotate_angle {angle: 1.57} (180deg) when BatteryState.percentage < 20%
-    - publishes /dock action goal when BatteryState.percentage < 0.15
+    - publishes /rotate_angle {angle: 1.57} (180deg) when BatteryState.percentage < 20% 
+                                                          and dock not visible
+    - publishes /dock action goal when BatteryState.percentage < 0.15 and dock visible
     - Logs successful docking to life.log
 
     Requires:
@@ -44,7 +45,7 @@
       ---
       # Feedback
 
-    - irobot_create_msgs/action/DockServo
+    - irobot_create_msgs/action/DockServo  (galactic)
     - irobot_create_msgs/action/Dock
       # Request
       ---
@@ -82,8 +83,8 @@ from action_msgs.msg import GoalStatus
 from rclpy.time import Time
 from sensor_msgs.msg import BatteryState       # percentage: 0.0 - 1.0
 from irobot_create_msgs.action import Undock      # no parms, result: is_docked: true,false
-# from irobot_create_msgs.msg import DockStatus  # docked: true,false
-#from irobot_create_msgs.action import DockServo
+from irobot_create_msgs.msg import DockStatus  # is_docked, dock_visible: true,false 
+#from irobot_create_msgs.action import DockServo  # (galactic)
 from irobot_create_msgs.action import Dock
 from irobot_create_msgs.action import RotateAngle  # angle: float32, max_rotation_speed: float32 (1.9r/s), result: pose, Feedback: remaining_angle_travel: float32
 
@@ -94,10 +95,16 @@ import datetime as dt
 
 DEBUG = False
 # Uncomment for debug prints to console
-# DEBUG = True
+DEBUG = True
 
 LIFELOGFILE = "/home/pi/wali_pi5/logs/life.log"
 
+# For testing
+UNDOCK_AT_PERCENTAGE = 0.45 # 0.995
+ROTATE_AT_PERCENTAGE = 0.40 # 0.18
+DOCK_AT_PERCENTAGE   = 0.38 # 0.15
+
+# Quote out for testing
 UNDOCK_AT_PERCENTAGE = 0.995
 ROTATE_AT_PERCENTAGE = 0.18
 DOCK_AT_PERCENTAGE   = 0.15
@@ -136,6 +143,22 @@ class WaLINode(Node):
 
     self.battery_state = None
 
+    self.sub = self.create_subscription(
+      DockStatus,
+      'dock_status',
+      self.dock_status_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '\n*** /dock_status subscriber created'
+      print(dtstr,printMsg)
+
+    self.dock_status = None
+
+
     self._undock_action_client = ActionClient(self, Undock, 'undock')
     # self._dock_action_client = ActionClient(self, DockServo, 'dock')  # the "dock" action server requires a DockServo.action msg
     self._dock_action_client = ActionClient(self, Dock, 'dock')  # the "dock" action server requires a Dock.action msg
@@ -157,6 +180,14 @@ class WaLINode(Node):
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "battery_state_sub_callback(): battery_state.percentage {:.0f} %".format(100 * self.battery_percentage)
+      print(dtstr,printMsg)
+      # self.lifeLog.info(printMsg)
+
+  def dock_status_sub_callback(self,dock_status_msg):
+    self.dock_status = dock_status_msg
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "dock_status_sub_callback(): is_docked:{} dock_visible: {}".format(self.dock_status.is_docked, self.dock_status.dock_visible)
       print(dtstr,printMsg)
       # self.lifeLog.info(printMsg)
 
@@ -324,6 +355,14 @@ class WaLINode(Node):
 
   def wali_main_cb(self):
     try:
+
+      if (self.dock_status.is_docked):
+        self.state = "docked"
+      elif (self.dock_status.dock_visible):
+        self.state = "ready2dock"
+      else:
+        self.state = "undocked"
+
       if DEBUG:
         dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         printMsg = "wali_main_cb(): executing"
@@ -336,7 +375,7 @@ class WaLINode(Node):
       # publishes /rotate_angle {angle: 1.57} (180deg) when BatteryState.percentage low
       # publishes /dock action goal when BatteryState.percentage very low
 
-      if (self.battery_percentage > UNDOCK_AT_PERCENTAGE) and (self.state in ["docked","init"]):
+      if (self.battery_percentage > UNDOCK_AT_PERCENTAGE) and (self.state in ["docked"]):
         self.state = "undocking"
         if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -344,7 +383,7 @@ class WaLINode(Node):
           print(dtstr, printMsg)
         self.undock_action_send_goal()
 
-      elif (self.battery_percentage < ROTATE_AT_PERCENTAGE) and (self.state in ["undocked","init"]):
+      elif (self.battery_percentage < ROTATE_AT_PERCENTAGE) and (self.state in ["undocked"]) and not(self.dock_status.dock_visible):
         self.state = "turning"
         if DEBUG:
            dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
