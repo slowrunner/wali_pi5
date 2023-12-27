@@ -52,3 +52,6 @@ CATKIN_IGNORE
 
 c3ws/roslogs
 .log
+log/
+*.old
+test_wali_node.py
