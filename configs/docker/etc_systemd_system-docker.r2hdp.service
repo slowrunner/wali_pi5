@@ -7,8 +7,13 @@ After=syslog.target network.target
 Type=simple
 user=pi
 WorkingDirectory=/home/pi/wali_pi5/c3ws
-ExecStartPre=-/usr/bin/docker exec r2hdp stop
+# Stop r2hdp container (if running)
+ExecStartPre=-/usr/bin/docker stop r2hdp
+# Remove the r2hdp container (if exists)
 ExecStartPre=-/usr/bin/docker rm r2hdp
+# Wait 30 seconds to allow life logging to start up at boot time
+ExecStartPre=/bin/sleep 30
+# Start r2hdp detached (which runs start_wali.sh)
 ExecStart=/bin/bash /home/pi/wali_pi5/configs/docker/start_docker_detached_r2hdp.sh
 
 [Install]

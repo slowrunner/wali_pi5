@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/wali_pi5/c3ws
+cd /home/pi/wali_pi5/c3ws
 # --rm removes container after exit
 # --w working dir to start in
 echo -e "\n*** STARTING ROS 2 HUMBLE PLUS IN DOCKER ***"
