@@ -8,8 +8,13 @@ echo "(Cleaning life.log first)"
 /home/pi/wali_pi5/plib/cleanlifelog.py
 echo " "
 fn="/home/pi/wali_pi5/logs/life.log"
-totalLife=`(awk -F':' '{sum+=$3}END{print sum;}' $fn)`
+# fn="/home/pi/wali_pi5/utils/test_life.log"
+totalAwake=`(awk -F':' '{sum+=$3}END{print sum;}' $fn)`
+totalNaps=`(awk -F'nap for' '{sum+=$2}END{print sum;}' $fn)`
+totalLife=`(echo "scale=1; ($totalAwake + $totalNaps)" | bc)`
 echo "*** Create3-WALI TOTAL LIFE STATISTICS ***"
+echo "Total Awake: " $totalAwake " hrs"
+echo "Total Naps:    " $totalNaps " hrs"
 echo "Total Life: " $totalLife "hrs (since Dec 11, 2023)"
 echo "Playtimes (Undocked-Docked):" `(grep -c " Docking: success " $fn)`
 booted=`(grep -c "\- boot \-" $fn)`
