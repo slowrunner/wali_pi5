@@ -9,10 +9,13 @@ if [ "$#" -ne 1 ] ;
 	exit
 fi
 echo "WaLiPi5 is going to nap for $1 hours"
-~/wali_pi5/utils/logMaintenance.py 'WaLiPi5 is going to nap for '$1' hours
+~/wali_pi5/utils/logMaintenance.py 'WaLiPi5 is going to nap for '$1' hours'
 
-# Convert hours to seconds to set alarm'
-naptime="+"$(( $1 * 3600 ))
+# Convert hours to seconds to set alarm - "/ 1" converts to integer
+napsecs=`(echo "scale=0; ($1 * 3600) / 1" | bc)`
+naptime="+"$napsecs
+# echo "naptime: "$naptime
+echo -e "Issuing: echo "$naptime" | sudo tee /sys/class/rtc/rtc0/wakealarm"
 echo $naptime | sudo tee /sys/class/rtc/rtc0/wakealarm
 sudo shutdown -h +1
 
