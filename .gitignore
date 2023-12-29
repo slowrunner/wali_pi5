@@ -55,3 +55,4 @@ c3ws/roslogs
 log/
 *.old
 test_wali_node.py
+install/

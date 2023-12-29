@@ -10,7 +10,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('lib/' + package_name, [package_name+'/create3_ir_dist.py']),
+        ('lib/' + package_name, [package_name+'/ir_dist.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,6 +25,7 @@ setup(
             'test_wali_node = wali.test_wali_node:main',
             'vel_pwr_test = wali.vel_pwr_test:main',
             'battery_sub = wali.battery_sub:main',
+            'ir2scan = wali.ir2scan:main',
             'sub_ir = wali.sub_ir:main'
         ],
     },
