@@ -9,6 +9,7 @@ if [ $ROS_DISTRO == "galactic" ]
     echo -e '** ros2 action send_goal /dock irobot_create_msgs/action/Dock "{}"'
     ros2 action send_goal /dock irobot_create_msgs/action/Dock "{}"
 fi
+/home/pi/wali_pi5/utils/logMaintenance.py 'Manual Docking: success (assumed)'
 
 
 
