@@ -77,7 +77,7 @@ def printIR(msg):
         	print("{:<20} intensity: {:>5} dist: {:>-8.3f}m".format(label,str(val),dist) )
         	label_idx += 1
 
-SCAN_TOPIC_HZ = 20              # Publish Scan Topic NN times per second
+SCAN_TOPIC_HZ = 40              # Publish Scan Topic NN times per second
 SCAN_TOPIC_PERIOD = 1.0/SCAN_TOPIC_HZ
 
 ANGLE_MIN =  -1.1344640138        # -65 degrees   65 deg ccw from front

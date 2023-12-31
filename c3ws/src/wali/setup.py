@@ -26,6 +26,7 @@ setup(
             'vel_pwr_test = wali.vel_pwr_test:main',
             'battery_sub = wali.battery_sub:main',
             'ir2scan = wali.ir2scan:main',
+            'odometer = wali.odometer:main',
             'sub_ir = wali.sub_ir:main'
         ],
     },

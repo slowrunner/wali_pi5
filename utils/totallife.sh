@@ -8,6 +8,7 @@ echo "(Cleaning life.log first)"
 /home/pi/wali_pi5/plib/cleanlifelog.py
 echo " "
 fn="/home/pi/wali_pi5/logs/life.log"
+ofn='/home/pi/wali_pi5/logs/odometer.log'
 # fn="/home/pi/wali_pi5/utils/test_life.log"
 totalAwake=`(awk -F':' '{sum+=$3}END{print sum;}' $fn)`
 totalNaps=`(awk -F'nap for' '{sum+=$2}END{print sum;}' $fn)`
@@ -23,3 +24,7 @@ aveSession=`(echo "scale=1; ($totalLife / $booted)" | bc -l)`
 echo "Average Session: " $aveSession "hrs"
 safetyShutdowns=`(grep -c "safety shutdown" $fn)`
 echo "Safety Shutdowns: " $safetyShutdowns 
+totalMoved=`(awk -F'moved:' '{sum+=$2}END{printf "%.1f", sum;}' $ofn)`
+totalMovedFt=`(echo "scale=1; ($totalMoved / 0.3048)" | bc)`
+echo "Total Travel: " $totalMoved "meters" $totalMovedFt "feet"
+
