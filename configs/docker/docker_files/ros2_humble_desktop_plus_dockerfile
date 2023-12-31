@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-teleop-twist-joy ros-humble-teleop-twist-keyboard \
     python3-colcon-common-extensions \
     ros-humble-tf-transformations python3-rosdep2 \
-    nano joystick\
+    nano joystick bc \
     python3-pip \
     imagemagick \
     && rm -rf /var/lib/apt/lists/*
