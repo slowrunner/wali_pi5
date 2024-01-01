@@ -56,3 +56,4 @@ log/
 *.old
 test_wali_node.py
 install/
+maps/
