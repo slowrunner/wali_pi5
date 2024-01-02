@@ -39,6 +39,20 @@ install(
 #   DESTINATION lib/${PROJECT_NAME}
 # )
 
+# For map_server
+# REF: https://answers.ros.org/question/398095/ros2-nav2-map_server-problems-loading-map-with-nav2_map_server/?answer=417598#post-id-417598
+
+# Install the launch file
+#    install(DIRECTORY launch/
+#    DESTINATION share/${PROJECT_NAME}/launch
+# )
+
+# Install the map file
+#   install(DIRECTORY maps/
+#   DESTINATION share/${PROJECT_NAME}/maps
+# )
+
+
 ament_python_install_package(${PROJECT_NAME})
 ament_python_install_module(${PROJECT_NAME}/create3_navigator.py)
 # ament_python_install_module(${PROJECT_NAME}/create3_ir_scan.py)

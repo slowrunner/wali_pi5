@@ -9,6 +9,8 @@ if [ $ROS_DISTRO != "galactic" ]; then
   ros2 topic echo --once --flow-style /odom
 fi
 
+~/wali_pi5/utils/logMaintenance.py 'Issued reset_pose'
+
 echo -e '** SEND RESET_POSE'
 ros2 service call /reset_pose irobot_create_msgs/srv/ResetPose "{}"
 

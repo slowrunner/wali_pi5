@@ -1,11 +1,11 @@
 amcl:
   ros__parameters:
     use_sim_time: False # was True
-    alpha1: 0.2
-    alpha2: 0.2
-    alpha3: 0.2
-    alpha4: 0.2
-    alpha5: 0.2
+    alpha1: 0.0 # was 0.2 : noise in odom rotation estimate from rotation
+    alpha2: 0.0 # was 0.2 : noise in odom rotation estimate from translation
+    alpha3: 0.0 # was 0.2 : noise in odom translation estimate from translation
+    alpha4: 0.0 # was 0.2 : noise in odom translation estimate from rotation
+    alpha5: 0.2 #         : translation noise if model is omni
     base_frame_id: "base_link"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
@@ -13,9 +13,9 @@ amcl:
     do_beamskip: false
     global_frame_id: "map"
     lambda_short: 0.1
-    laser_likelihood_max_dist: 2.0
-    laser_max_range: 100.0
-    laser_min_range: -1.0
+    laser_likelihood_max_dist: 0.4 # was 2.0
+    laser_max_range: -1.0 # was 100.0, -1.0 use scan reported maximum
+    laser_min_range: -1.0  # -1.0 use scan reported minimum
     laser_model_type: "likelihood_field"
     max_beams: 60
     max_particles: 2000

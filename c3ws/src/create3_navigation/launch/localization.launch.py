@@ -37,19 +37,19 @@ ARGUMENTS = [
 
 
 def generate_launch_description():
-    pkg_creat3_navigation = get_package_share_directory('create3_navigation')
+    pkg_create3_navigation = get_package_share_directory('create3_navigation')
     pkg_nav2_bringup = get_package_share_directory('nav2_bringup')
 
     localization_params_arg = DeclareLaunchArgument(
         'params',
         default_value=PathJoinSubstitution(
-            [pkg_create3_navigation, 'config', 'localization.yaml']),
+            [pkg_create3_navigation, 'config', 'localization.create3.yaml']),
         description='Localization parameters')
 
     map_arg = DeclareLaunchArgument(
         'map',
         default_value=PathJoinSubstitution(
-            [pkg_gopigo3_navigation, 'maps', 'warehouse.yaml']),
+            [pkg_create3_navigation, 'maps', 'floorplan.map.yaml']),
         description='Full path to map yaml file to load')
 
     namespace = LaunchConfiguration('namespace')
