@@ -34,7 +34,8 @@ READINGS  = [
 
 def dist_ir_reading(sensor_idx, reading):
       UNDEF = -99.999
-      dist = np.interp(reading,READINGS[sensor_idx],DISTANCES, right=UNDEF, left=UNDEF)
+      NOTHING = DISTANCES[0]
+      dist = np.interp(reading,READINGS[sensor_idx],DISTANCES, right=UNDEF, left=NOTHING)
       return dist
 
 def main():
