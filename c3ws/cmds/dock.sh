@@ -11,5 +11,6 @@ if [ $ROS_DISTRO == "galactic" ]
 fi
 /home/pi/wali_pi5/utils/logMaintenance.py 'Manual Docking: success (assumed)'
 
+/home/pi/wali_pi5/c3ws/cmds/reset_pose.sh
 
 
