@@ -10,6 +10,7 @@ if [ "$#" -ne 1 ] ;
 fi
 echo "WaLiPi5 is going to nap for $1 hours"
 ~/wali_pi5/utils/logMaintenance.py 'WaLiPi5 is going to nap for '$1' hours'
+~/wali_pi5/c3ws/cmds/say.sh "I'm going to take a nap for "$1" hours"
 
 # Convert hours to seconds to set alarm - "/ 1" converts to integer
 napsecs=`(echo "scale=0; ($1 * 3600) / 1" | bc)`
