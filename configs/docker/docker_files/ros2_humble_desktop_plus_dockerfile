@@ -15,6 +15,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     nano joystick bc \
     python3-pip \
     imagemagick \
+    alsa-base \
+    alsa-utils \
+    libsndfile1-dev \
     && rm -rf /var/lib/apt/lists/*
 
 
@@ -25,6 +28,7 @@ RUN useradd -s /bin/bash pi
 RUN echo 'pi:pi' | chpasswd 
 RUN adduser pi sudo
 RUN echo '%pi ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+RUN usermod -a -G audio pi
 
 # files to copy must be in the docker tree
 COPY snes_slow.config.yaml /opt/ros/humble/share/teleop_twist_joy/config/
@@ -34,6 +38,9 @@ USER pi:pi
 
 # python access to joystick
 RUN sudo pip3 install evdev
+
+# add piper-tts
+RUN sudo pip3 install piper-tts
 
 # NOTE: joystick access will require docker running in --privileged mode
 
