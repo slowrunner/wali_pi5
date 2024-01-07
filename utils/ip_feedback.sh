@@ -41,12 +41,12 @@ then
 #       echo $IP_NUMBER > /home/ubuntu/Desktop/$IP_NUMBER.assigned_ip
         echo "IP info saved"
 
-        su -c "espeak-ng 'WiFi IP'" pi
-        su -c "espeak-ng $IP_NUMBER" pi
-        su -c "espeak-ng repeating "  pi
-        su -c "espeak-ng $IP_NUMBER" pi
+        su -c "espeak-ng -a 20 'WiFi IP'" pi
+        su -c "espeak-ng -a 20 $IP_NUMBER" pi
+        su -c "espeak-ng -a 20 repeating "  pi
+        su -c "espeak-ng -a 20 $IP_NUMBER" pi
 else
-        su -c "espeak-ng 'no IP number'" pi
+        su -c "espeak-ng -a 20 'no IP number'" pi
         echo "no IP number"
         echo "no IP" > /home/pi/failedIP
 #       echo "no IP" > /home/ubuntu/Desktop/failedIP
