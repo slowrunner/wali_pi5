@@ -20,7 +20,7 @@ echo "Total Life: " $totalLife "hrs (since Dec 11, 2023)"
 echo "Playtimes (Undocked-Docked):" `(grep -c " Docking: success " $fn)`
 booted=`(grep -c "\- boot \-" $fn)`
 echo "Sessions (boot): " `(grep -c "\- boot \-" $fn)`
-aveSession=`(echo "scale=1; ($totalLife / $booted)" | bc -l)`
+aveSession=`(echo "scale=1; ($totalAwake / $booted)" | bc -l)`
 echo "Average Session: " $aveSession "hrs"
 safetyShutdowns=`(grep -c "safety shutdown" $fn)`
 echo "Safety Shutdowns: " $safetyShutdowns 
