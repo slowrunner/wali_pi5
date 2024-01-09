@@ -13,6 +13,10 @@ echo -e "\n*** Start odometer node"
 echo '*** ros2 run wali odometer & '
 ros2 run wali odometer &
 
+echo -e "\n*** Start wali.say_node"
+echo '*** ros2 run wali say_node &'
+ros2 run wali say_node &
+
 # MUST START IN FOREGROUND or docker will exit!
 ros2 run wali wali_node
 

@@ -7,14 +7,9 @@
   <maintainer email="slowrunner@users.noreply.github.com">slowrunner</maintainer>
   <license>TODO: License declaration</license>
 
-<!-- REF: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/first_node_python.html -->
   <depend>rclpy</depend>
   <depend>irobot_create_msgs</depend>
-
-<!--
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>irobot_create_msgs</exec_depend> 
--->
+  <depend>wali_interfaces</depend>
 
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>

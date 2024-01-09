@@ -14,7 +14,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ubuntu',
+    maintainer='slowrunner',
     maintainer_email='slowrunner@users.noreply.github.com',
     description='WaLI: Wall follower Looking for Intelligence',
     license='If it works for you, let me know',
@@ -27,6 +27,7 @@ setup(
             'battery_sub = wali.battery_sub:main',
             'ir2scan = wali.ir2scan:main',
             'odometer = wali.odometer:main',
+            'say_node = wali.say_node:main',
             'sub_ir = wali.sub_ir:main'
         ],
     },
