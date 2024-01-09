@@ -94,14 +94,14 @@ import logging
 import datetime as dt
 
 DEBUG = False
-# Uncomment for debug prints to console
-DEBUG = True
+# Uncomment for debug prints to console, run kill_docker-r2hdp.sh, then ./run_docker_r2hdp.sh to see console msgs
+# DEBUG = True
 
 LIFELOGFILE = "/home/pi/wali_pi5/logs/life.log"
 
 # For testing
 UNDOCK_AT_PERCENTAGE = 0.45 # 0.995
-ROTATE_AT_PERCENTAGE = 0.40 # 0.18
+ROTATE_AT_PERCENTAGE = 0.40 # 0.20
 DOCK_AT_PERCENTAGE   = 0.38 # 0.15
 
 # Quote out for testing
@@ -123,7 +123,7 @@ class WaLINode(Node):
     self.loghandler.setFormatter(self.logformatter)
     self.lifeLog.addHandler(self.loghandler)
 
-    printMsg = '** WaLI node started - Dock below {:2d}% **'.format( int(DOCK_AT_PERCENTAGE * 100) )
+    printMsg = '** WaLI node started - Undock:{:2d}% Rotate:{:2d}% Dock:{:2d}% **'.format(int(UNDOCK_AT_PERCENTAGE * 100), int(ROTATE_AT_PERCENTAGE * 100), int(DOCK_AT_PERCENTAGE * 100) )
     print(printMsg)
     self.lifeLog.info(printMsg)
 
@@ -296,14 +296,14 @@ class WaLINode(Node):
     if result.is_docked:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       self.state = "docked"
-      printMsg = "** WaLI Docking: success at battery {:.0f}% **".format(self.battery_percentage*100)
+      printMsg = "** WaLI dock goal result - Docking: success at battery {:.0f}% **".format(self.battery_percentage*100)
       self.lifeLog.info(printMsg)
       if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
           print(dtstr, printMsg)
     else:
       self.state = "undocked"
-      printMsg = "** WaLi Docking: failed **"
+      printMsg = "** WaLi dock goal result - Docking: failed **"
       self.lifeLog.info(printMsg)
       if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -357,6 +357,10 @@ class WaLINode(Node):
     try:
 
       if (self.dock_status.is_docked):
+        # Sometimes docking result is not sent, so log docked noticed
+        if (self.state == "docking"):
+          printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% **".format(self.battery_percentage*100)
+          self.lifeLog.info(printMsg)
         self.state = "docked"
       elif (self.dock_status.dock_visible):
         self.state = "ready2dock"
