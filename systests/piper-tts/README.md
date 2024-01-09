@@ -75,26 +75,30 @@ Simple mixer control 'Capture',0
 
 ```
 
-** increase volume:
+** increase volume:  
 ```
   amixer -D pulse sset Master 80%
 ```
 
-** get arctic-medium voice for wali  (downloads it then uses it)
+** get arctic-medium voice for wali  (downloads it then uses it)  
 ```
 echo 'Welcome to the world of speech synthesis!' | piper  --model en_US-arctic-medium     --output_file arctic-medium.wav
 ```
 
-** piper.sh to play arctic voice 
-```
-#!/bin/bash
+** cmds/say.sh to play arctic voice   
 
-pushd /home/pi/pi5desk/systests/piper-tts
-echo $1 | piper   --model en_US-arctic-medium.onnx    --output_raw | aplay -r 22050 -f S16_LE -t raw - 
-popd
+```
+#!/bin/bash  
+
+if [ "$#" -ne 1 ] ;
+	then echo 'Usage:  ./say.sh "string to speak" '
+	exit
+fi
+
+echo $1 | piper   --model /home/pi/wali_pi5/c3ws/models/piper-tts/en_US-arctic-medium.onnx  --output_raw | aplay -D plughw:2,0 -r 22050 -f S16_LE -t raw - 
 ```
 
-** ALSO CAN INSTALL DIRECT
+** ALSO CAN INSTALL DIRECT  
 ```
 1) Create piper folder, cd to it
 mkdir piper
@@ -112,4 +116,16 @@ echo 'This sentence is spoken first. This sentence is synthesized while the firs
   aplay -r 22050 -f S16_LE -t raw -
 
 ```
+
+** Python Examples  
+- piper2wav.py:  call piper from Python to write out TTS to a wav file  
+- piper2wav2pyaudio.py: call piper from Python to write out temp wav file then play the wav file  with pyaudio  
+  pyaudio uses ALSA without config and prints a bucketful of warning msgs even though it will play the file  
+- piper2psnddev.py: Calls piper from Python to write out temp wav file, plays the file with Python sounddevice, then deletes the temp.wav file  
+
+
+** Install for Docker  
+- RUN sudo apt install alsa-base alsa-utils libsndfile1-dev  
+- RUN usermod -a -G audio pi  
+- RUN sudo pip3 install piper-tts  
 
