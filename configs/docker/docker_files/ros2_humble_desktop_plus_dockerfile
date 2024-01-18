@@ -19,6 +19,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     alsa-utils \
     libsndfile1-dev \
     libportaudio2 \
+    ros-humble-depthai-ros \
+    ros-humble-rtabmap ros-humble-rtabmap-conversions ros-humble-rtabmap-examples \
+    ros-humble-rtabmap-launch ros-humble-rtabmap-msgs ros-humble-rtabmap-odom \
+    ros-humble-rtabmap-python ros-humble-rtabmap-slam ros-humble-rtabmap-sync ros-humble-rtabmap-util \
     && rm -rf /var/lib/apt/lists/*
 
 
@@ -34,6 +38,12 @@ RUN usermod -a -G audio pi
 # files to copy must be in the docker tree
 COPY snes_slow.config.yaml /opt/ros/humble/share/teleop_twist_joy/config/
 COPY F710.config.yaml /opt/ros/humble/share/teleop_twist_joy/config/
+
+# Setup for Oak-D-Lite camera
+RUN echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"' | tee /etc/udev/rules.d/80-movidius.rules
+# RUN udevadm control --reload-rules && udevadm trigger
+
+
 
 USER pi:pi
 

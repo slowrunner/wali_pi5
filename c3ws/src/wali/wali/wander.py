@@ -79,11 +79,11 @@ import datetime as dt
 from rclpy.action import ActionClient
 from action_msgs.msg import GoalStatus
 import numpy as np
-
+import random
 
 # Uncomment desired mode
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 '''
 Allow namespaced robots: (uncomment as appropriate)
@@ -97,9 +97,10 @@ DWELL_TIME = 1 * WANDER_CB_RATE   # do nothing for awhile
 INIT_DWELL_TIME = 10 * WANDER_CB_RATE
 DRIVE_SPEED = 0.1 # m/s
 AVOID_ANGULAR_RATE = 0.5 # rad/sec
+SORT_OF_STRAIGHT_ANGULAR_RATE = 0.2 # rad/sec
 IR_SENSOR_LABELS = ["side_left", "left", "front_left", "front_center_left", "front_center_right", "front_right", "right"]
 NEAR_DISTANCE = 0.350  # normal 0.350
-SAFE_DISTANCE = 0.200
+SAFE_DISTANCE = 0.175
 
 
 # ************* IR Intensity Sensor To Distance Estimate
@@ -148,6 +149,10 @@ class Wander(Node):
         '''
         super().__init__('wander')
 
+        dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        printMsg ='wali.wander.py started'
+        print(dtstr,printMsg)
+
         '''
         Set up subscriptions
         '''
@@ -182,7 +187,7 @@ class Wander(Node):
         self.command = Twist()
         self.last_hazard_detection_msg = HazardDetectionVector()
         self.last_ir_intensity_msg = IrIntensityVector()
-
+        self.counter_obstacles = 0
         # Set up cmd_vel twist publisher
         self.twist_publisher = self.create_publisher(
             Twist,
@@ -202,7 +207,7 @@ class Wander(Node):
         '''
         self.last_ir_intensity_msg = msg
 
-        if (self.ir_intensity_counter == 0):  # Print values each time counter is 0
+        if DEBUG and (self.ir_intensity_counter == 0):  # Print values each time counter is 0
           self.printIR(self.last_ir_intensity_msg)
 
         # increment/roll msg counter approximately once each second for 62 Hz topic
@@ -255,7 +260,7 @@ class Wander(Node):
         '''
         self.last_hazard_detection_msg = msg
 
-        if (self.hazard_detection_counter == 0):  # Print values each time counter is 0
+        if DEBUG and (self.hazard_detection_counter == 0):  # Print values each time counter is 0
           self.printHazards(self.last_hazard_detection_msg)
 
         # increment/roll msg counter approximately once each second for 20 Hz topic
@@ -353,24 +358,46 @@ class Wander(Node):
             print("\n",dtstr,printMsg)
         return
 
+    def continue_current_avoidance(self):
+        # Fix situation of waiting for obstacle to clear but not turning
+        if self.command.angular.z == 0:
+            self.command.angular.z = AVOID_ANGULAR_RATE * ([-1,1][random.randrange(2)])
+        self.twist_publisher.publish(self.command)
+        if DEBUG:
+            dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            printMsg ='continue_current_avoidance: published /cmd_vel with linear.x: {:.3f} m/s, angular.z: {:.3f} r/s'.format(self.command.linear.x,self.command.angular.z)
+            print("\n",dtstr,printMsg)
+        return
+
+    def random_time_extension(self):
+        rand_num = random.randint(0,5)
+        if DEBUG:
+            dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            printMsg ='random_time_extension: returning time extension {}'.format(rand_num)
+            print("\n",dtstr,printMsg)
+        return rand_num
+
 
     def drive_straight(self):
         if DEBUG: 
             dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             printMsg ='drive_straight: executing'
             print("\n",dtstr,printMsg)
-            speed = DRIVE_SPEED
-            self.command.linear.x = speed
-            self.command.linear.y = 0.0
-            self.command.linear.z = 0.0
-            self.command.angular.x = 0.0
-            self.command.angular.y = 0.0
-            self.command.angular.z = 0.0
+        speed = DRIVE_SPEED
+        self.command.linear.x = speed
+        self.command.linear.y = 0.0
+        self.command.linear.z = 0.0
+        self.command.angular.x = 0.0
+        self.command.angular.y = 0.0
+        # self.command.angular.z = 0.0
+        if (random.randint(0,10) == 0):
+            self.command.angular.z = SORT_OF_STRAIGHT_ANGULAR_RATE * ([-1,1][random.randrange(2)])
 
         self.twist_publisher.publish(self.command)
         if DEBUG:
                 dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                printMsg ='drive_straight: published /cmd_vel with linear.x: {:.3f} m/s'.format(self.command.linear.x)
+                # printMsg ='drive_straight: published /cmd_vel with linear.x: {:.3f} m/s'.format(self.command.linear.x)
+                printMsg ='drive_straight: published /cmd_vel with linear.x: {:.3f} m/s angular.z: {:.3f} r/s'.format(self.command.linear.x, self.command.angular.z)
                 print("\n",dtstr,printMsg)
         return
 
@@ -405,15 +432,21 @@ class Wander(Node):
         if obstacle and (obstacle[1] < SAFE_DISTANCE):
             self.stop_fwd_motion()
         # if obstacle and (self.prior_state != self.wander_state):
+        # print("IR_SENSOR_LABELS[0:4]:",IR_SENSOR_LABELS[0:4])
         if obstacle:
-            if (obstacle[0] in IR_SENSOR_LABELS[0:3]):
-                self.add_right_rotation_to_cmd_vel()
+            if self.prior_state != self.wander_state:
+                self.counter_obstacles += 1
+                if (obstacle[0] in IR_SENSOR_LABELS[0:4]):
+                    self.add_right_rotation_to_cmd_vel()
+                else:
+                    self.add_left_rotation_to_cmd_vel()
             else:
-                self.add_left_rotation_to_cmd_vel()
+                self.continue_current_avoidance()
         # mark been here just before
         self.prior_state = self.wander_state
 
-        if not obstacle:
+        # after obtacle is cleared, either quit turning or randomly continue turning
+        if not obstacle and (self.random_time_extension() == 0):
             self.wander_state = "wander_dwell"
             if DEBUG:
                 dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -479,6 +512,7 @@ class Wander(Node):
             self.wander_state = "wander_drive"
 
     def wander_init(self):
+        # print("wander_init: dwell_counter: {}".format(self.dwell_counter))
         if self.prior_state != self.wander_state:
             # set so counter will not reaet next time
             self.prior_state = self.wander_state
@@ -490,9 +524,14 @@ class Wander(Node):
                 printMsg ='wander_init: dwell counter started, stopping all motion'
                 print("\n",dtstr,printMsg)
             self.stop_all_motion()
+        # print("wander_init: dwell_counter: {}".format(self.dwell_counter))
         self.dwell_counter += 1
+        # print("wander_init: dwell_counter: {}".format(self.dwell_counter))
         self.dwell_counter = self.dwell_counter % INIT_DWELL_TIME
-        if (self.dwell_counter == 0):
+        # print("wander_init: dwell_counter: {}".format(self.dwell_counter))
+
+        # If dwell time is passed and the ir_intensity readings have started
+        if (self.dwell_counter == 0) and (len(self.last_ir_intensity_msg.readings) != 0):
             if DEBUG: 
                 dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 printMsg ='wander_init: dwell complete, transition to drive state'
@@ -507,6 +546,8 @@ class Wander(Node):
     def wander_cb(self):
 
         match self.wander_state:
+            case "wander_init":
+                self.wander_init()
             case "wander_dwell":
                 self.wander_dwell()
             case "wander_drive":
@@ -516,10 +557,15 @@ class Wander(Node):
             case "wander_escape":
                 self.wander_escape()
             case "wander_exit":
-                print("wander_cb: wander_exit state requested")
+                dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                printMsg ='wali.wander.py: wander_exit state requested, obstacles avoided: {}'.format(self.counter_obstacles)
+                print("\n"+dtstr,printMsg)
                 exit()
             case _:
                 print("wander_cb: Unknown state: {}".format(self.wander_state))
+                dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                printMsg ='wali.wander.py unknown state exit, obstacles avoided: {}'.format(self.counter_obstacles)
+                print("\n"+dtstr,printMsg)
                 exit()
 
 
@@ -543,6 +589,10 @@ def main(args=None):
         rclpy.spin(wander)
     except KeyboardInterrupt:
         if DEBUG: print('\nCaught keyboard interrupt')
+        dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        printMsg ='wali.wander.py keyboard interrupt exit, obstacles avoided: {}'.format(wander.counter_obstacles)
+        print("\n"+dtstr,printMsg)
+
         pass
     finally:
     	if DEBUG: print("Destroying the Wander Node")
