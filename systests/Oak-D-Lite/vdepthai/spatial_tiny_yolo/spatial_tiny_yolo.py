@@ -102,6 +102,9 @@ monoRight.setBoardSocket(dai.CameraBoardSocket.RIGHT)
 # stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
 # Commented out 6Jan2022 for Oak-D-Lite
 
+# get rid of warning 2024-01-18 alan
+stereo.setDepthAlign(dai.CameraBoardSocket.CAM_A)
+
 spatialDetectionNetwork.setBlobPath(nnBlobPath)
 spatialDetectionNetwork.setConfidenceThreshold(0.5)
 spatialDetectionNetwork.input.setBlocking(False)

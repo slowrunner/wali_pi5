@@ -67,11 +67,14 @@ monoRight.setBoardSocket(dai.CameraBoardSocket.RIGHT)
 
 # setting node configs
 
-# to eliminate error msg 2024-01-17 alan
+# to eliminate warning 2024-01-17 alan
 """
-[184430101175A41200] [3.1] [147.531] [SpatialDetectionNetwork(1)] [warning] Neural network inference was performed on socket 'RGB', depth frame is aligned to socket 'RIGHT'. Bounding box mapping will not be correct, and will lead to erroneus spatial values. Align depth map to socket 'RGB' using 'setDepthAlign'.
+[184430101175A41200] [3.1] [147.531] [SpatialDetectionNetwork(1)] [warning] 
+Neural network inference was performed on socket 'RGB', depth frame is aligned to socket 'RIGHT'. 
+Bounding box mapping will not be correct, and will lead to erroneus spatial values. 
+Align depth map to socket 'RGB' using 'setDepthAlign'.
 """
-# stereo.setDepthAlign(???)
+stereo.setDepthAlign(dai.CameraBoardSocket.CAM_A)
 
 # stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
 # Commented out 6Jan2022 for Oak-D-Lite
