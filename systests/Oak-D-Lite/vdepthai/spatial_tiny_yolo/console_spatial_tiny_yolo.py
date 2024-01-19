@@ -132,10 +132,11 @@ with dai.Device(pipeline) as device:
             for detection in detections:
                 try:
                     label = labelMap[detection.label]
+                    conf = detection.confidence
                 except:
                     label = str(detection.label)
                 x = int(detection.spatialCoordinates.x)
                 y = int(detection.spatialCoordinates.y)
                 z = int(detection.spatialCoordinates.z)
-                print("\n{:<10s} X:{:<5d}  Y:{:<5d}  Z:{:<5d} mm".format(label, x, y, z))
+                print("\n{:<10s} conf:{:<2.0f}%  at X:{:<5d}  Y:{:<5d}  Z:{:<5d} mm".format(label, conf, x, y, z))
             print(" ")

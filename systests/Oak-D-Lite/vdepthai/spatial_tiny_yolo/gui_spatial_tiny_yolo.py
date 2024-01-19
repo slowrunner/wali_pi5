@@ -84,6 +84,7 @@ monoRight.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
 monoRight.setBoardSocket(dai.CameraBoardSocket.RIGHT)
 
 # setting node configs
+
 # stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
 # Commented out 6Jan2022 for Oak-D-Lite
 
@@ -93,6 +94,9 @@ spatialDetectionNetwork.input.setBlocking(False)
 spatialDetectionNetwork.setBoundingBoxScaleFactor(0.5)
 spatialDetectionNetwork.setDepthLowerThreshold(100)
 spatialDetectionNetwork.setDepthUpperThreshold(5000)
+
+# Eliminate warning about aligned with RIGHT
+stereo.setDepthAlign(dai.CameraBoardSocket.CAM_A)
 
 # Yolo specific parameters
 spatialDetectionNetwork.setNumClasses(80)
@@ -187,6 +191,11 @@ with dai.Device(pipeline) as device:
             cv2.putText(frame, f"Z: {int(detection.spatialCoordinates.z)} mm", (x1 + 10, y1 + 80), cv2.FONT_HERSHEY_TRIPLEX, 0.5, 255)
 
             cv2.rectangle(frame, (x1, y1), (x2, y2), color, cv2.FONT_HERSHEY_SIMPLEX)
+            x = int(detection.spatialCoordinates.x)
+            y = int(detection.spatialCoordinates.y)
+            z = int(detection.spatialCoordinates.z)
+            conf = detection.confidence
+            print("\n{:<10s} conf:{:<3.1f} at X:{:<5d}  Y:{:<5d}  Z:{:<5d} mm".format(label, conf, x, y, z))
 
         cv2.putText(frame, "NN fps: {:.2f}".format(fps), (2, frame.shape[0] - 4), cv2.FONT_HERSHEY_TRIPLEX, 0.4, color)
         # cv2.imshow("depth", depthFrameColor)
