@@ -13,3 +13,5 @@ if [ -f /opt/ros/humble/local_setup.bash ]; then
    source ~/wali_pi5/c3ws/install/setup.bash
   fi
 fi
+
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
