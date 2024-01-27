@@ -60,3 +60,4 @@ maps/
 lib64
 *.onnx
 *.onnx.json
+core
