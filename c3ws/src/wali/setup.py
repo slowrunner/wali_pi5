@@ -29,6 +29,7 @@ setup(
             'odometer = wali.odometer:main',
             'say_node = wali.say_node:main',
             'wander = wali.wander:main',
+            'wallfollwer = wali.wallfollower:main',
             'sub_tf = wali.sub_tf:main',
             'sub_ir = wali.sub_ir:main'
         ],
