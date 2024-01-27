@@ -4,6 +4,11 @@
 #
 # requires bc  (sudo apt-get install bc)
 #
+# Counted Keys:
+#   Playtimes:           " Docking: success "
+#   Sessions:            "- boot -"              ( "\- boot \-" search string )
+#   Safety shutdowns:    "safety shutdown"
+
 echo "(Cleaning life.log first)"
 /home/pi/wali_pi5/plib/cleanlifelog.py
 echo " "
