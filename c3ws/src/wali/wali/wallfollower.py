@@ -291,7 +291,7 @@ class Wallfollower(Node):
         self.last_odom_msg = Odometry()
         self.see_virtual_wall = False
         self.last_time_wall_detected = Time()
-        self.follow_wall_on = "unknown"
+        self.follow_wall_on = "left"            # Default to left wall follow - more sensors on left
         self.distance_wallfollowed = 0.0
         self.was_kidnapped = False
         self.current_heading = 0.0
@@ -437,7 +437,9 @@ class Wallfollower(Node):
         '''
 
         if (msg.opcode == IrOpcode.CODE_IR_VIRTUAL_WALL):     # == 162
-            print('\nir_opcode_cb: VIRTUAL WALL DETECTED:')
+            print('\nir_opcode_cb: VIRTUAL WALL DETECTED')
+        else:
+            print('\nir_opcode_cb: VIRTUAL WALL not detected')
 
 
     # ********* KIDNAP STATUS CALLBACK *********
@@ -557,7 +559,7 @@ class Wallfollower(Node):
     def continue_current_avoidance(self):
         # Fix situation of waiting for obstacle to clear but not turning
         if self.command.angular.z == 0:
-            self.command.angular.z = AVOID_ANGULAR_RATE * ([-1,1][random.randrange(2)])
+            self.command.angular.z = AVOID_ANGULAR_RATE * (-1.0 if self.follow_wall_on == "left" else 1.0)
         self.twist_publisher.publish(self.command)
         if DEBUG:
             dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -600,15 +602,18 @@ class Wallfollower(Node):
     # ********** WALLFOLLOWER STATES **********
 
     def wf_detect(self):
-        if self.obstacle_near():
+        if (self.obstacle_near() or self.see_virtual_wall):
             self.prior_state = self.wf_state
             self.wf_state = "wf_avoid"
             if DEBUG: 
                 dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                printMsg ='wf_detect: something nearby, -> wf_avoid'
+                printMsg ='wf_detect: something nearby or virtual wall, -> wf_avoid'
                 print("\n"+dtstr,printMsg)
         elif (self.wf_state != self.prior_state):
-                self.add_left_rotation_to_cmd_vel()
+                if self.follow_wall_on == "left":
+                    self.add_left_rotation_to_cmd_vel()
+                else:
+                    self.add_right_rotation_to_cmd_vel()
                 if DEBUG: 
                     dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     printMsg ='wf_detect: no wall, rotate toward wall'
@@ -638,10 +643,14 @@ class Wallfollower(Node):
         # rotate away from virtual wall based on side following
         # no objects close - transition to dwell
 
+        obstacle = self.obstacle_near()
+
+
         if DEBUG: 
             dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            printMsg ='wf_avoid: executing'
+            printMsg ='wf_avoid: virtual_wall: {} obstacle: {}'.format(self.see_virtual_wall, obstacle)
             print("\n"+dtstr,printMsg)
+
 
         if self.see_virtual_wall:
             if self.prior_state != self.wf_state:
@@ -649,30 +658,28 @@ class Wallfollower(Node):
                 if (self.follow_wall_on == "right"):
                     self.add_left_rotation_to_cmd_vel()
                 else:
-                    self.add_right_rotation_to_cmd()
+                    self.add_right_rotation_to_cmd_vel()
             else:
                 self.continue_current_avoidance()
-
-        obstacle = self.obstacle_near()
-        if obstacle and (obstacle[1] < SAFE_DISTANCE):
-            self.stop_fwd_motion()
-        # if obstacle and (self.prior_state != self.wf_state):
-        # print("IR_SENSOR_LABELS[0:4]:",IR_SENSOR_LABELS[0:4])
-        if obstacle:
-            if self.prior_state != self.wf_state:
-                self.counter_obstacles += 1
-                if (obstacle[0] in IR_SENSOR_LABELS[0:4]):
-                    self.add_right_rotation_to_cmd_vel()
+        else:   # Do not see virtual wall
+            if obstacle and (obstacle[1] < SAFE_DISTANCE):
+                self.stop_fwd_motion()
+            # if obstacle and (self.prior_state != self.wf_state):
+            # print("IR_SENSOR_LABELS[0:4]:",IR_SENSOR_LABELS[0:4])
+            if obstacle:
+                if self.prior_state != self.wf_state:
+                    self.counter_obstacles += 1
+                    if (obstacle[0] in IR_SENSOR_LABELS[0:4]):
+                        self.add_right_rotation_to_cmd_vel()
+                    else:
+                        self.add_left_rotation_to_cmd_vel()
                 else:
-                    self.add_left_rotation_to_cmd_vel()
-            # elif obstacle and see virtual wall, virtual wall avoidance already issued
-            elif not self.see_virtual_wall:      
-                self.continue_current_avoidance()
+                    self.continue_current_avoidance()
         # mark been here just before
         self.prior_state = self.wf_state
 
         # after obtacle is cleared, quit turning
-        if not obstacle or self.see_virtual_wall):
+        if not (obstacle or self.see_virtual_wall):
             self.wf_state = "wf_drive"
             if DEBUG:
                 dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -705,7 +712,7 @@ class Wallfollower(Node):
                 printMsg ='wf_drive: nearing obstacle, transitioning to wf_avoid'
                 print("\n"+dtstr,printMsg)
 
-        elif self.see_virtual_wall():
+        elif self.see_virtual_wall:
             self.prior_state = self.wf_state
             self.wf_state = "wf_avoid"
             if DEBUG: 

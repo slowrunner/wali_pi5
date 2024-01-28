@@ -17,6 +17,10 @@ echo -e "\n*** Start wali.say_node"
 echo '*** ros2 run wali say_node &'
 ros2 run wali say_node &
 
+echo -e "\n **** STARTING ir2scan "
+echo -e "executing: ros2 run wali ir2scan &"
+ros2 run wali ir2scan &
+
 # MUST START IN FOREGROUND or docker will exit!
 ros2 run wali wali_node
 
