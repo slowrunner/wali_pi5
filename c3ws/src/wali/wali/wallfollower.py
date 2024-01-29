@@ -107,7 +107,7 @@ import rclpy
 
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
-from rclpy.time import Time
+from rclpy.time import Time, Duration
 from irobot_create_msgs.msg import IrIntensityVector
 from irobot_create_msgs.msg import IrOpcode
 from irobot_create_msgs.msg import HazardDetectionVector
@@ -137,7 +137,7 @@ namespace = ''                # for no namespace
 
 WF_CB_RATE = 10  # times per second wallfollower wf_cb will be executed
 DWELL_TIME = 1 * WF_CB_RATE   # do nothing for awhile
-INIT_DWELL_TIME = 10 * WF_CB_RATE
+INIT_DWELL_TIME = 15 * WF_CB_RATE
 DRIVE_SPEED = 0.1 # m/s
 AVOID_ANGULAR_RATE = 0.5 # rad/sec
 WF_ANGULAR_RATE = 0.2 # rad/sec
@@ -289,8 +289,6 @@ class Wallfollower(Node):
         self.last_ir_opcode_msg = IrOpcode()
         self.counter_obstacles = 0
         self.last_odom_msg = Odometry()
-        self.see_virtual_wall = False
-        self.last_time_wall_detected = Time()
         self.follow_wall_on = "left"            # Default to left wall follow - more sensors on left
         self.distance_wallfollowed = 0.0
         self.was_kidnapped = False
@@ -420,16 +418,9 @@ class Wallfollower(Node):
         '''
         self.last_ir_opcode_msg = msg
 
-        if (self.last_ir_opcode_msg.opcode == IrOpcode.CODE_IR_VIRTUAL_WALL):
-            self.see_virtual_wall = True
-        else:
-            self.see_virtual_wall = False
-
-        if DEBUG and (self.ir_opcode_counter == 0):  # Print values each time counter is 0
+        if DEBUG:  # Print values each time received
           self.printIrOpcode(self.last_ir_opcode_msg)
 
-        # increment/roll msg counter approximately once each second for 5 Hz topic
-        self.ir_opcode_counter = (self.ir_opcode_counter + 1) % 5
 
     def printIrOpcode(self, msg):
         '''
@@ -437,10 +428,19 @@ class Wallfollower(Node):
         '''
 
         if (msg.opcode == IrOpcode.CODE_IR_VIRTUAL_WALL):     # == 162
-            print('\nir_opcode_cb: VIRTUAL WALL DETECTED')
-        else:
-            print('\nir_opcode_cb: VIRTUAL WALL not detected')
+            dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            printMsg='ir_opcode_cb: VIRTUAL WALL DETECTED at {}{:0.1f}'.format(msg.header.stamp.sec, msg.header.stamp.nanosec/1000000000.0)
+            print("\n"+dtstr,printMsg)
 
+    def see_virtual_wall(self):
+        see_it = False
+
+        if (self.last_ir_opcode_msg.opcode == IrOpcode.CODE_IR_VIRTUAL_WALL):
+          if ( ( self.get_clock().now() - Time.from_msg(self.last_ir_opcode_msg.header.stamp) ) < Duration(seconds=0.3)):
+            see_it = True
+          else:
+            self.last_ir_opcode_msg.opcode = 0
+        return see_it
 
     # ********* KIDNAP STATUS CALLBACK *********
 
@@ -602,7 +602,7 @@ class Wallfollower(Node):
     # ********** WALLFOLLOWER STATES **********
 
     def wf_detect(self):
-        if (self.obstacle_near() or self.see_virtual_wall):
+        if (self.obstacle_near() or self.see_virtual_wall()):
             self.prior_state = self.wf_state
             self.wf_state = "wf_avoid"
             if DEBUG: 
@@ -648,11 +648,11 @@ class Wallfollower(Node):
 
         if DEBUG: 
             dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            printMsg ='wf_avoid: virtual_wall: {} obstacle: {}'.format(self.see_virtual_wall, obstacle)
+            printMsg ='wf_avoid: virtual_wall: {} obstacle: {}'.format(self.see_virtual_wall(), obstacle)
             print("\n"+dtstr,printMsg)
 
 
-        if self.see_virtual_wall:
+        if self.see_virtual_wall():
             if self.prior_state != self.wf_state:
                 self.stop_fwd_motion()
                 if (self.follow_wall_on == "right"):
@@ -679,7 +679,7 @@ class Wallfollower(Node):
         self.prior_state = self.wf_state
 
         # after obtacle is cleared, quit turning
-        if not (obstacle or self.see_virtual_wall):
+        if not (obstacle or self.see_virtual_wall()):
             self.wf_state = "wf_drive"
             if DEBUG:
                 dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -712,7 +712,7 @@ class Wallfollower(Node):
                 printMsg ='wf_drive: nearing obstacle, transitioning to wf_avoid'
                 print("\n"+dtstr,printMsg)
 
-        elif self.see_virtual_wall:
+        elif self.see_virtual_wall():
             self.prior_state = self.wf_state
             self.wf_state = "wf_avoid"
             if DEBUG: 

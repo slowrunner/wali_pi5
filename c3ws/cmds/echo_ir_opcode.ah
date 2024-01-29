@@ -1,0 +1,8 @@
+#/bin/bash
+
+echo -e "\n*** ECHO IR OPCODE"
+echo -e "(topic only published if wall visible - opcode: 162)"
+
+ros2 topic echo /ir_opcode
+
+
