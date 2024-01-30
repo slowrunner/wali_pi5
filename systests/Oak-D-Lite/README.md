@@ -40,7 +40,7 @@ python3 -m venv --system-site-packages vdepthai
 cd /home/pi/wali_pi5/systests/Oak-D-Lite/vdepthai/
 git clone https://github.com/luxonis/depthai.git
 source bin/activate
-pip3 install opencv-python opencv-contrib-python
+pip3 install opencv-python opencv-contrib-python python3-matplotlib
 cd depthai
 python3 install_requirements.py 
 ```
