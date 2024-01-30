@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 
-# import cv2
 import depthai as dai
-# import time
-# import math
 
 # Create pipeline
 pipeline = dai.Pipeline()
@@ -18,6 +15,8 @@ xlinkOut.setStreamName("imu")
 # Pipeline is defined, now we can connect to the device
 try: 
     device = dai.Device(pipeline) 
+    print("IMU Detected")
+
 except Exception as e:
     print(e)
     with dai.Device() as device:
