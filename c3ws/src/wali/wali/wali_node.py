@@ -172,7 +172,8 @@ class WaLINode(Node):
         print(dtstr,printMsg)
     self.battery_percentage = -1.0
     self.state = "init"
-
+    self.last_undock_time = dt.datetime.now()
+    self.last_dock_time = dt.datetime.now()
 
   def battery_state_sub_callback(self,battery_state_msg):
     self.battery_state = battery_state_msg
@@ -233,7 +234,11 @@ class WaLINode(Node):
 
     else:
       self.state = "undocked"
-      printMsg = "** WaLI Undocking: success at battery {:.0f}% **".format(self.battery_percentage*100)
+      self.last_undock_time = dt.datetime.now()
+      chargeDurationInSeconds = (self.last_undock_time - self.last_dock_time).total_seconds()
+      chargeDurationInDays = divmod(chargeDurationInSeconds, 86400)
+      chargeDurationInHours = round( (chargeDurationInDays[1] / 3600.0), 1)
+      printMsg = "** WaLI Undocking: success at battery {:.0f}%, docked for {:.1f} hrs **".format(self.battery_percentage*100, chargeDurationInHours)
       self.lifeLog.info(printMsg)
       if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -296,7 +301,11 @@ class WaLINode(Node):
     if result.is_docked:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       self.state = "docked"
-      printMsg = "** WaLI dock goal result - Docking: success at battery {:.0f}% **".format(self.battery_percentage*100)
+      self.last_dock_time = dt.datetime.now()
+      playtimeDurationInSeconds = (self.last_dock_time - self.last_undock_time).total_seconds()
+      playtimeDurationInDays = divmod(playtimeDurationInSeconds, 86400)
+      playtimeDurationInHours = round( (playtimeDurationInDays[1] / 3600.0), 1)
+      printMsg = "** WaLI dock goal result - Docking: success at battery {:.0f}% after {:.1f} hrs **".format(self.battery_percentage*100, playtimeDurationInHours)
       self.lifeLog.info(printMsg)
       if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -357,13 +366,26 @@ class WaLINode(Node):
     try:
 
       if (self.dock_status.is_docked):
-        # Sometimes docking result is not sent, so log docked noticed
-        if (self.state == "docking"):
-          printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% **".format(self.battery_percentage*100)
+        # Sometimes docking result is not sent or was manually docked so log docked noticed
+        # if (self.state == "docking"):
+        if (self.state != "docked"):
+          self.last_dock_time = dt.datetime.now()
+          playtimeDurationInSeconds = (self.last_dock_time - self.last_undock_time).total_seconds()
+          playtimeDurationInDays = divmod(playtimeDurationInSeconds, 86400)
+          playtimeDurationInHours = round( (playtimeDurationInDays[1] / 3600.0), 1)
+          printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% after {:.1f} hrs **".format(self.battery_percentage*100, playtimeDurationInHours)
           self.lifeLog.info(printMsg)
         self.state = "docked"
       elif (self.dock_status.dock_visible):
         self.state = "ready2dock"
+      elif (self.state == "docked"):  # not docked and not ready2dock but state still says docked
+          self.state = "undocked"
+          self.last_undock_time = dt.datetime.now()
+          chargeDurationInSeconds = (self.last_undock_time - self.last_dock_time).total_seconds()
+          chargeDurationInDays = divmod(chargeDurationInSeconds, 86400)
+          chargeDurationInHours = round( (chargeDurationInDays[1] / 3600.0), 1)
+          printMsg = "** WaLI Noticed Undocking: success at battery {:.0f}%, docked for {:.1f} hrs **".format(self.battery_percentage*100, chargeDurationInHours)
+          self.lifeLog.info(printMsg)
       else:
         self.state = "undocked"
 

@@ -4,11 +4,13 @@
 while true; \
 do echo -e "\n********** WaLiPi5  MONITOR ******************************"; \
 echo -n `date +"%A %D"`; \
-echo ""; \
+# echo -e '\n'; \
 uptime; \
 vcgencmd measure_temp && vcgencmd measure_clock arm && vcgencmd get_throttled; \
 free -h; \
-docker ps; \
+if [  -f /usr/bin/docker ]; then docker ps;  fi; \
+echo -e "\n"; \
+pgrep -a ros
 sleep 10; \
 echo " "; \
 done

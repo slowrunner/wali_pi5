@@ -23,6 +23,9 @@ echo "Total Awake: " $totalAwake " hrs"
 echo "Total Naps:    " $totalNaps " hrs"
 echo "Total Life: " $totalLife "hrs (since Dec 11, 2023)"
 echo "Playtimes (Undocked-Docked):" `(grep -c " Docking: success " $fn)`
+last5playtimes=`(grep " h playtime " $fn | tail -4 | awk -F" after "  '{sum+=$2}END{print sum;}' )`
+last5avePlaytime=`(echo "scale=1; $last5playtimes / 5" | bc)`
+echo "Average playtime (last five)" $last5avePlaytime "hrs "
 booted=`(grep -c "\- boot \-" $fn)`
 echo "Sessions (boot): " `(grep -c "\- boot \-" $fn)`
 aveSession=`(echo "scale=1; ($totalAwake / $booted)" | bc -l)`
