@@ -305,7 +305,7 @@ class WaLINode(Node):
       playtimeDurationInSeconds = (self.last_dock_time - self.last_undock_time).total_seconds()
       playtimeDurationInDays = divmod(playtimeDurationInSeconds, 86400)
       playtimeDurationInHours = round( (playtimeDurationInDays[1] / 3600.0), 1)
-      printMsg = "** WaLI dock goal result - Docking: success at battery {:.0f}% after {:.1f} hrs **".format(self.battery_percentage*100, playtimeDurationInHours)
+      printMsg = "** WaLI dock goal result - Docking: success at battery {:.0f}% after {:.1f} hrs playtime **".format(self.battery_percentage*100, playtimeDurationInHours)
       self.lifeLog.info(printMsg)
       if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -373,7 +373,7 @@ class WaLINode(Node):
           playtimeDurationInSeconds = (self.last_dock_time - self.last_undock_time).total_seconds()
           playtimeDurationInDays = divmod(playtimeDurationInSeconds, 86400)
           playtimeDurationInHours = round( (playtimeDurationInDays[1] / 3600.0), 1)
-          printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% after {:.1f} hrs **".format(self.battery_percentage*100, playtimeDurationInHours)
+          printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% after {:.1f} hrs playtime **".format(self.battery_percentage*100, playtimeDurationInHours)
           self.lifeLog.info(printMsg)
         self.state = "docked"
       elif (self.dock_status.dock_visible):

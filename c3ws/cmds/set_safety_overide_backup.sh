@@ -8,5 +8,7 @@
 #   - kidnap sensing
 
 echo -e "SET SAFETY OVERRIDE (ONLY) BACKUP"
+
+# ros2 param get /motion_control reflexes.REFLEX_BUMP
 ros2 param set /motion_control safety_override backup_only
 

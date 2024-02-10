@@ -289,7 +289,7 @@ class Wallfollower(Node):
         self.last_ir_opcode_msg = IrOpcode()
         self.counter_obstacles = 0
         self.last_odom_msg = Odometry()
-        self.follow_wall_on = "left"            # Default to left wall follow - more sensors on left
+        self.follow_wall_on = "right"            # Default to left wall follow - more sensors on left
         self.distance_wallfollowed = 0.0
         self.was_kidnapped = False
         self.current_heading = 0.0

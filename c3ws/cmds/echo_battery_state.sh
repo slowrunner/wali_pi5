@@ -8,6 +8,9 @@ if [ $ROS_DISTRO == "galactic" ]
   else
     echo -e "ros2 topic echo --once --flow-style /battery_state"
     ros2 topic echo --once --flow-style -l 1 /battery_state
+    echo -en "\nPercentage: "
+    ros2 topic echo --once --field percentage /battery_state
+
 fi
 
 

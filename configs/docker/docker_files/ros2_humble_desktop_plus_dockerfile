@@ -53,6 +53,8 @@ RUN sudo pip3 install evdev
 # add piper-tts and module to play wav files piper produces
 RUN sudo pip3 install piper-tts
 
+RUN sudo pip3 install vcgencmd
+
 # NOTE: joystick access will require docker running in --privileged mode
 
 CMD bash -c "source start_wali.sh"
