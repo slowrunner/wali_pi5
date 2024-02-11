@@ -19,9 +19,9 @@ totalAwake=`(awk -F':' '{sum+=$3}END{print sum;}' $fn)`
 totalNaps=`(awk -F'nap for' '{sum+=$2}END{print sum;}' $fn)`
 totalLife=`(echo "scale=1; ($totalAwake + $totalNaps)" | bc)`
 echo "*** Create3-WALI TOTAL LIFE STATISTICS ***"
-echo "Total Awake: " $totalAwake " hrs"
+echo "Total Awake:  " $totalAwake " hrs"
 echo "Total Naps:    " $totalNaps " hrs"
-echo "Total Life: " $totalLife "hrs (since Dec 11, 2023)"
+echo "Total Life:   " $totalLife " hrs (since Dec 11, 2023)"
 echo "Playtimes (Undocked-Docked):" `(grep -c " Docking: success " $fn)`
 last5playtimes=`(grep " hrs playtime " $fn | tail -5 | awk -F" after "  '{sum+=$2}END{print sum;}' )`
 last5avePlaytime=`(echo "scale=1; $last5playtimes / 5" | bc)`

@@ -238,7 +238,10 @@ class WaLINode(Node):
       chargeDurationInSeconds = (self.last_undock_time - self.last_dock_time).total_seconds()
       chargeDurationInDays = divmod(chargeDurationInSeconds, 86400)
       chargeDurationInHours = round( (chargeDurationInDays[1] / 3600.0), 1)
-      printMsg = "** WaLI Undocking: success at battery {:.0f}%, docked for {:.1f} hrs **".format(self.battery_percentage*100, chargeDurationInHours)
+      if (chargeDurationInHours > 0.1):
+          printMsg = "** WaLI Undocking: success at battery {:.0f}%, docked for {:.1f} hrs **".format(self.battery_percentage*100, chargeDurationInHours)
+      else:  # Do not know how long on dock, such as just booted after a nap on the dock
+          printMsg = "** WaLI Undocking: success at battery {:.0f}% **".format(self.battery_percentage*100)
       self.lifeLog.info(printMsg)
       if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -373,8 +376,9 @@ class WaLINode(Node):
           playtimeDurationInSeconds = (self.last_dock_time - self.last_undock_time).total_seconds()
           playtimeDurationInDays = divmod(playtimeDurationInSeconds, 86400)
           playtimeDurationInHours = round( (playtimeDurationInDays[1] / 3600.0), 1)
-          printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% after {:.1f} hrs playtime **".format(self.battery_percentage*100, playtimeDurationInHours)
-          self.lifeLog.info(printMsg)
+          if (playtimeDurationInHours > 0.1):
+              printMsg = "** WaLI Noticed Docking: success at battery {:.0f}% after {:.1f} hrs playtime **".format(self.battery_percentage*100, playtimeDurationInHours)
+              self.lifeLog.info(printMsg)
         self.state = "docked"
       elif (self.dock_status.dock_visible):
         self.state = "ready2dock"
@@ -384,8 +388,9 @@ class WaLINode(Node):
           chargeDurationInSeconds = (self.last_undock_time - self.last_dock_time).total_seconds()
           chargeDurationInDays = divmod(chargeDurationInSeconds, 86400)
           chargeDurationInHours = round( (chargeDurationInDays[1] / 3600.0), 1)
-          printMsg = "** WaLI Noticed Undocking: success at battery {:.0f}%, docked for {:.1f} hrs **".format(self.battery_percentage*100, chargeDurationInHours)
-          self.lifeLog.info(printMsg)
+          if (chargeDurationInHours > 0.1):
+              printMsg = "** WaLI Noticed Undocking: success at battery {:.0f}%, docked for {:.1f} hrs **".format(self.battery_percentage*100, chargeDurationInHours)
+              self.lifeLog.info(printMsg)
       else:
         self.state = "undocked"
 
