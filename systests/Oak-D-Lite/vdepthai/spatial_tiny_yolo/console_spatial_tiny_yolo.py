@@ -6,6 +6,7 @@ import cv2
 import depthai as dai
 import numpy as np
 import time
+import datetime as dt
 
 '''
 Spatial Tiny-yolo example
@@ -127,7 +128,8 @@ with dai.Device(pipeline) as device:
         detections = inDet.detections
 
         # Output FPS and detections to console
-        print("NN fps: {:<5.1f}    ".format(fps),end="\r")
+        dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S ")
+        print(dtstr + "NN fps: {:<5.1f}    ".format(fps),end="\r")
         if len(detections) != 0:
             for detection in detections:
                 try:
@@ -138,5 +140,5 @@ with dai.Device(pipeline) as device:
                 x = int(detection.spatialCoordinates.x)
                 y = int(detection.spatialCoordinates.y)
                 z = int(detection.spatialCoordinates.z)
-                print("\n{:<10s} conf:{:<2.0f}%  at X:{:<5d}  Y:{:<5d}  Z:{:<5d} mm".format(label, conf, x, y, z))
+                print("\n{:<10s} conf:{:<3.0f}%  at (X,Y): {:>5d},{:<5d} pixels,  Z:{:<5d} mm".format(label, conf*100, x, y, z))
             print(" ")
