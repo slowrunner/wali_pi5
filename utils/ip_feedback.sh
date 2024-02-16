@@ -1,9 +1,10 @@
-#!bin/bash
+#!/bin/bash
 
 # FILE:  ip_feedback.sh
 # This script is run once at boot by ip_feedback.service
 
 echo "starting"
+sleep 60
 COUNT=0
 IPs=$(hostname --all-ip-addresses)
 while [ -z "$IPs" ]
@@ -37,7 +38,8 @@ fi
 if [ ! -z "$IP_NUMBER" ]
 then
         echo "saving IP info"
-        sudo bash -c "echo $IP_NUMBER > /boot/$IP_NUMBER.assigned_ip"
+#        sudo bash -c "echo $IP_NUMBER > /boot/$IP_NUMBER.assigned_ip"
+        sudo bash -c "echo $IP_NUMBER > /boot/firmware/$IP_NUMBER.assigned_ip"
 #       echo $IP_NUMBER > /home/ubuntu/Desktop/$IP_NUMBER.assigned_ip
         echo "IP info saved"
 
