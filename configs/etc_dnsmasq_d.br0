@@ -1,0 +1,8 @@
+dhcp-authoritative
+dhcp-rapid-commit
+no-ping
+interface=br0
+dhcp-range=192.168.186.4,192.168.186.6,255.255.255.248,1h
+dhcp-option=3
+leasefile-ro
+
