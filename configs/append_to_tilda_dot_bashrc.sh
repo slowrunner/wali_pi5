@@ -7,6 +7,9 @@ echo -e '\nexport ROS_LOG_DIR="/home/pi/wali_pi5/c3ws/roslogs"' >> ~/.bashrc
 echo -e '\n*** Appending: export ROS_DISTRO="humble"' to ~/.bashrc
 echo 'export ROS_DISTRO="humble"' >> ~/.bashrc
 
+echo -e '\n*** Appending: export RMW_IMPLEMENTATION=rmw_fastrtps_cpp"' to ~/.bashrc
+echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
+
 echo -e '\n** Appending source ss.sh if exists to ~/.bashrc'
 echo -e '\n' >> ~/.bashrc
 echo "if [ -f /home/pi/wali_pi5/c3ws/ss.sh ]; then " >> ~/.bashrc
