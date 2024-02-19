@@ -15,7 +15,8 @@ echo " "
 fn="/home/pi/wali_pi5/logs/life.log"
 ofn='/home/pi/wali_pi5/logs/odometer.log'
 # fn="/home/pi/wali_pi5/utils/test_life.log"
-totalAwake=`(awk -F':' '{sum+=$3}END{print sum;}' $fn)`
+# totalAwake=`(awk -F':' '{sum+=$3}END{print sum;}' $fn)`
+totalAwake=`(awk -F'execution:' '{sum+=$2}END{print sum;}' $fn)`
 totalNaps=`(awk -F'nap for' '{sum+=$2}END{print sum;}' $fn)`
 totalLife=`(echo "scale=1; ($totalAwake + $totalNaps)" | bc)`
 echo "*** Create3-WALI TOTAL LIFE STATISTICS ***"
