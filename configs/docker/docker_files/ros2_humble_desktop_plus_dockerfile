@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-rtabmap ros-humble-rtabmap-conversions ros-humble-rtabmap-examples \
     ros-humble-rtabmap-launch ros-humble-rtabmap-msgs ros-humble-rtabmap-odom \
     ros-humble-rtabmap-python ros-humble-rtabmap-slam ros-humble-rtabmap-sync ros-humble-rtabmap-util \
+    iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
 
