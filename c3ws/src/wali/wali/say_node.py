@@ -35,6 +35,8 @@
         amixer -D pulse sset Master 10%
         ~/wali_pi5/c3ws/cmds/say.sh 'Volume set very low 10 percent'
 
+    DEVICE:  0,0  (was 2,0 but after setting up usb0 gadget/networking mode changed to 0,0)
+
 """
 
 
@@ -82,7 +84,8 @@ class SayService(Node):
         wav_file = wave.open(filename, 'w')
         audio = voice.synthesize(text,wav_file)
 
-        subprocess.check_output(['aplay -D plughw:2,0 -r 22050 -f S16_LE ' + filename], stderr=subprocess.STDOUT, shell=True)
+        # subprocess.check_output(['aplay -D plughw:2,0 -r 22050 -f S16_LE ' + filename], stderr=subprocess.STDOUT, shell=True)
+        subprocess.check_output(['aplay -D plughw:0,0 -r 22050 -f S16_LE ' + filename], stderr=subprocess.STDOUT, shell=True)
         os.remove(filename)
         response.spoken = True
         self.logger.info(text + " - spoken: " + str(response.spoken) )
