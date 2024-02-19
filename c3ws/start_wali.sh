@@ -5,6 +5,16 @@ echo -e "START_WALI.SH EXECUTING"
 cd /home/pi/wali_pi5/c3ws
 source install/setup.bash
 
+# echo -e "\n*** Start FastDDS Discovery Server"
+echo '*** fastdds discovery -i 0 -l 192.168.186.3 -p 11811 &'
+fastdds discovery -i 0 -l 192.168.186.3 -p 11811 -l 10.0.0.219 -p 11811 -l 127.0.0.1 -p 11811 &
+export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+export FASTRTPS_DEFAULT_PROFILES_FILE=/home/pi/wali_pi5/configs/super_client_configuration_file.xml
+
+
+# sleep to allow fastdds server startup?
+sleep 5
+
 echo -e "\n*** Start F710 game controller node"
 echo '*** ros2 launch teleop_twist_joy teleop-launch.py joy_config:="F710" '
 ros2 launch teleop_twist_joy teleop-launch.py joy_config:="F710" &
