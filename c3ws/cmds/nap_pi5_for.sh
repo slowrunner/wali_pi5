@@ -2,7 +2,7 @@
 
 # FILE:  nap_pi5_for.sh
 # USAGE:  ./nap_pi5_for.sh [N.n hours]
-# REQ: sudo -E rpi-eeprom-onfig --edit, add POWER_OFF_ON_HALT=1 and WAKE_ON_GPIO=0
+# REQ: sudo -E rpi-eeprom-config --edit, add POWER_OFF_ON_HALT=1 and WAKE_ON_GPIO=0
 
 if [ "$#" -ne 1 ] ;
 	then echo "Usage:  ./nap_pi5_for.sh NN.n (NN.n hours) "
