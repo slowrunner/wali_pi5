@@ -18,6 +18,9 @@ echo "fi" >> ~/.bashrc
 
 echo -e '\n# If ssh closes immediately, use "ssh -t pi@x.x.x.x /bin/sh" and fix ~/.bashrc' >> ~/.bashrc
 
+echo -e 'export ROS_DISCOVERY_SERVER="127.0.0.1:11811"' >> ~/.bashrc
+echo -e 'export FASTRTPS_DEFAULT_PROFILES_FILE=/home/pi/wali_pi5/configs/super_client_configuration_file.xml' >> ~/.bashrc
+
 
 
 echo -e '\n*** tail ~/.bashrc:'
