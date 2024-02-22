@@ -5,3 +5,7 @@ usb_max_current_enable=1
 
 # enable RTC backup battery charge voltage
 dtparam=rtc_bbat_vchg=3000000
+
+# enable USB0 networking
+dtoverlay=dwc2,dr_mode=peripheral
+
