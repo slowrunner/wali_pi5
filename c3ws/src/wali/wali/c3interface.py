@@ -55,6 +55,9 @@ from rclpy.action import ActionClient
 from action_msgs.msg import GoalStatus
 from rclpy.time import Time
 from sensor_msgs.msg import BatteryState       # percentage: 0.0 - 1.0
+from nav_msgs.msg import Odometry
+from irobot_create_msgs.msg import IrIntensityVector
+
 from irobot_create_msgs.action import Undock      # no parms, result: is_docked: true,false
 from irobot_create_msgs.msg import DockStatus  # is_docked, dock_visible: true,false 
 #from irobot_create_msgs.action import DockServo  # (galactic)
@@ -70,7 +73,7 @@ DEBUG = False
 # Uncomment for debug prints to console, run kill_docker-r2hdp.sh, then ./run_docker_r2hdp.sh to see console msgs
 DEBUG = True
 
-NAMESPACE="/wali/"
+NAMESPACE="wali"
 C3IF_LOGFILE="/home/pi/wali_pi5/logs/c3interface.log"
 
 class C3Interface(Node):
@@ -89,7 +92,7 @@ class C3Interface(Node):
     printMsg = '** c3interface node started **'
     self.c3IfLog.info(printMsg)
 
-
+    # *** battery_state topic ***
     self.batteryStateSub = self.create_subscription(
       BatteryState,
       'battery_state',
@@ -101,17 +104,15 @@ class C3Interface(Node):
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = '\n*** /battery_state subscriber created'
-      slef.c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
-    self.battery_state = None
-
-    self.battery_state_pub = self.create_publisher(
+    self.batteryStatePub = self.create_publisher(
       BatteryState,
       NAMESPACE+'/battery_state',
       qos_profile_sensor_data)
-    
 
-    self.sub = self.create_subscription(
+    # *** dock_status topic ***
+    self.dockStatusSub = self.create_subscription(
       DockStatus,
       'dock_status',
       self.dock_status_sub_callback,
@@ -124,32 +125,91 @@ class C3Interface(Node):
       printMsg = '\n*** /dock_status subscriber created'
       self.c3IfLog.info(printMsg)
 
-    self.dock_status = None
+    self.dockStatusPub = self.create_publisher(
+      DockStatus,
+      NAMESPACE+'/dock_status',
+      qos_profile_sensor_data)
 
+    # *** odom topic ***
+    self.odomSub = self.create_subscription(
+      Odometry,
+      'odom',
+      self.odom_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
 
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '\n*** /odom subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.odomPub = self.create_publisher(
+      Odometry,
+      NAMESPACE+'/odom',
+      qos_profile_sensor_data)
+
+    # *** ir_intensity topic ***
+    self.irIntensitySub = self.create_subscription(
+      IrIntensityVector,
+      'ir_intensity',
+      self.irIntensity_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '\n*** /ir_intensity subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.irIntensityPub = self.create_publisher(
+      IrIntensityVector,
+      NAMESPACE+'/ir_intensity',
+      qos_profile_sensor_data)
+
+    # *** undock action ***
     self._undock_action_client = ActionClient(self, Undock, 'undock')
     self._dock_action_client = ActionClient(self, Dock, 'dock')  # the "dock" action server requires a Dock.action msg
     self._rotate_angle_action_client = ActionClient(self, RotateAngle, 'rotate_angle')
+    # *********** END __init__ ******
 
+
+  # *** TOPIC CALLBACKS ***
   def battery_state_sub_callback(self,battery_state_msg):
-    self.battery_state = battery_state_msg
+    self.batteryStatePub.publish(battery_state_msg)
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "battery_state_sub_callback()"
       self.c3IfLog.info(printMsg)
 
   def dock_status_sub_callback(self,dock_status_msg):
-    self.dock_status = dock_status_msg
+    self.dockStatusPub.publish(dock_status_msg)
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-      printMsg = "dock_status_sub_callback()")
+      printMsg = "dock_status_sub_callback()"
       self.c3IfLog.info(printMsg)
 
+  def odom_sub_callback(self,msg):
+    self.odomPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "odom_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  def irIntensity_sub_callback(self,msg):
+    self.irIntensityPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "irIntensity_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  # *** ACTIONS ***
   def undock_action_send_goal(self):
     undock_msg = Undock.Goal()
     if DEBUG:
-      printMsg = "undock_action_send_goal()""
-      c3IfLog.info.(printMsg)
+      printMsg = "undock_action_send_goal()"
+      self.c3IfLog.info(printMsg)
     self._undock_action_client.wait_for_server()
     self._undock_action_send_goal_future = self._undock_action_client.send_goal_async(undock_msg)
     self._undock_action_send_goal_future.add_done_callback(self.undock_goal_response_callback)
@@ -159,7 +219,7 @@ class C3Interface(Node):
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "undock_goal_response_callback()"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
     self._get_undock_result_future = goal_handle.get_result_async()
     self._get_undock_result_future.add_done_callback(self.get_undock_result_callback)
@@ -169,7 +229,7 @@ class C3Interface(Node):
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "get_undock_result_callback()"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
 
   def dock_action_send_goal(self):
@@ -181,27 +241,27 @@ class C3Interface(Node):
     self._dock_action_client.wait_for_server()
     if DEBUG:
         dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        c3IfLog.info("dock_action_send_goal(): After wait_for_server")
+        self.c3IfLog.info("dock_action_send_goal(): After wait_for_server")
     self._dock_action_send_goal_future = self._dock_action_client.send_goal_async(dock_msg)
     if DEBUG:
         dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        c3IfLog.info("dock_action_send_goal(): after set future")
+        self.c3IfLog.info("dock_action_send_goal(): after set future")
     self._dock_action_send_goal_future.add_done_callback(self.dock_goal_response_callback)
     if DEBUG:
         dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        c3IfLog.info("dock_action_send_goal(): after add_done_callback")
+        self.c3IfLog.info("dock_action_send_goal(): after add_done_callback")
 
   def dock_goal_response_callback(self, future):
     goal_handle = future.result()
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "dock_goal_response_callback()"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
     printMsg = 'dock Goal Accepted'
     if DEBUG:
         dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        c3IfLog.info(printMsg)
+        self.c3IfLog.info(printMsg)
 
     self._get_dock_result_future = goal_handle.get_result_async()
     self._get_dock_result_future.add_done_callback(self.get_dock_result_callback)
@@ -211,7 +271,7 @@ class C3Interface(Node):
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "get_dock_result_callback()"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
 
   def rotate_angle_action_send_goal(self,angle):
@@ -220,7 +280,7 @@ class C3Interface(Node):
 
     if DEBUG:
       printMsg = "rotate_angle_action_send_goal"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
     self._rotate_angle_action_client.wait_for_server()
     self._rotate_angle_action_send_goal_future = self._rotate_angle_action_client.send_goal_async(rotate_angle_msg)
     self._rotate_angle_action_send_goal_future.add_done_callback(self.rotate_angle_goal_response_callback)
@@ -229,14 +289,14 @@ class C3Interface(Node):
     goal_handle = future.result()
     if DEBUG:
       printMsg = "rotate_angle_goal_response_callback()"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
     if not goal_handle.accepted:
-      self.get_logger().info('rotate Goal Rejected :(')
+      self.c3IfLog.info('rotate Goal Rejected :(')
       return
 
     if DEBUG:
-        c3IfLog.info('rotate Goal Accepted :)')
+        self.c3IfLog.info('rotate Goal Accepted :)')
 
     self._get_rotate_angle_result_future = goal_handle.get_result_async()
     self._get_rotate_angle_result_future.add_done_callback(self.get_rotate_angle_result_callback)
@@ -246,7 +306,7 @@ class C3Interface(Node):
     status = future.result().status
     if DEBUG:
       printMsg = "get_rotate_angle_result_callback()"
-      c3IfLog.info(printMsg)
+      self.c3IfLog.info(printMsg)
 
 
 def main():
