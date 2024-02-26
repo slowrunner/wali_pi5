@@ -99,6 +99,14 @@ DEBUG = False
 
 LIFELOGFILE = "/home/pi/wali_pi5/logs/life.log"
 
+# "Sleep Time" Wali needs to stay on dock
+START_SLEEP_TIME = dt.datetime.strptime('22:00', '%H:%M').time()
+END_SLEEP_TIME = dt.datetime.strptime('08:00', '%H:%M').time()
+
+# print('START_SLEEP_TIME: ', START_SLEEP_TIME.strftime("%H:%M") )
+# print('END_SLEEP_TIME: ', END_SLEEP_TIME.strftime("%H:%M") )
+
+
 # For testing
 UNDOCK_AT_PERCENTAGE = 0.45 # 0.995
 ROTATE_AT_PERCENTAGE = 0.40 # 0.20
@@ -109,6 +117,16 @@ UNDOCK_AT_PERCENTAGE = 0.995
 ROTATE_AT_PERCENTAGE = 0.18
 DOCK_AT_PERCENTAGE   = 0.15
 
+
+def isNotSleepTime(start,end):
+    time_now = dt.datetime.now().time()
+    is_not_sleep_time = (time_now > end ) and (time_now < start )
+    if DEBUG:
+        print('Time Now: ', time_now.strftime('%H:%M:%S') )
+        print('start sleep: ', start)
+        print('end sleep: ', end)
+        print('Sleep Time?: ', is_sleep_time)
+    return is_not_sleep_time
 
 class WaLINode(Node):
 
@@ -402,11 +420,12 @@ class WaLINode(Node):
         print(dtstr, printMsg)
 
       # WaLI logic
-      # publishes /undock action goal when BatteryState.percentage at or near full (and state="docked")
+      # publishes /undock action goal when BatteryState.percentage at or near full
+      #           (and state="docked" and current time not in sleep hours)
       # publishes /rotate_angle {angle: 1.57} (180deg) when BatteryState.percentage low
       # publishes /dock action goal when BatteryState.percentage very low
 
-      if (self.battery_percentage > UNDOCK_AT_PERCENTAGE) and (self.state in ["docked"]):
+      if (self.battery_percentage > UNDOCK_AT_PERCENTAGE) and (self.state in ["docked"]) and isNotSleepTime(START_SLEEP_TIME, END_SLEEP_TIME) :
         self.state = "undocking"
         if DEBUG:
           dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
