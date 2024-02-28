@@ -1,0 +1,7 @@
+motion_control:
+  ros__parameters:
+    # safety_override options are 
+    # "none" - standard safety profile, robot cannot backup more than an inch because of lack of cliff protection in rear, max speed 0.306m/s
+    # "backup_only" - allow backup without cliff safety, but keep cliff safety forward and max speed at 0.306m/s
+    # "full" - no cliff safety, robot will ignore cliffs and set max speed to 0.46m/s
+    safety_override: "none"
