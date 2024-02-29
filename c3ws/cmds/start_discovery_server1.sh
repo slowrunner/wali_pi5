@@ -5,6 +5,6 @@
 # export FASTRTPS_DEFAULT_PROFILES_FILE=/home/pi/wali_pi5/configs/super_client_configuration_file1.xml
 
 # echo -e "\n*** Start FastDDS Discovery Server"
-echo '*** fastdds discovery -i 1 -l 192.168.186.3 -p 11811 &'
+echo '*** fastdds discovery -i 1 -l 10.0.0.219 -p 11888 -l 127.0.0.1 -p 11888 &'
 fastdds discovery -i 1 -l 10.0.0.219 -p 11888 -l 127.0.0.1 -p 11888 &
 

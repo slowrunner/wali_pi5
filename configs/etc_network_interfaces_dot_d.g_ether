@@ -1,0 +1,11 @@
+auto usb0 
+allow-hotplug usb0 
+iface usb0 inet static
+        address 192.168.186.3
+        netmask 255.255.0.0
+
+auto usb0.1
+allow-hotplug usb0.1
+iface usb0.1 inet dhcp
+
+EOF

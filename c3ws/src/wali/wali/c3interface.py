@@ -28,12 +28,16 @@
     - /ir_opcode             IrOpcode
     - /kidnap_status         KidnapStatus
     - /imu                   sensor_msgs/msg/Imu
+    - /stop_status           StopStatus
+    - /cmd_vel               Twist
+
+    Create3 published Topics that require special listener/broadcasters
+    REF: https://github.com/ros2/geometry2/tree/rolling/tf2_ros/src
     - /tf                    tf2_msgs/msg/TFMessage
     - /tf_static             tf2_msgs/msg/TFMessage
-    - /stop_status           StopStatus
+
 
     Create3 Services Handled:
-    - /cmd_vel               Twist
     - /robot_power           RobotPower
 
     Create3 action servers Handled:
@@ -54,15 +58,28 @@ from rclpy.qos import qos_profile_sensor_data
 from rclpy.action import ActionClient
 from action_msgs.msg import GoalStatus
 from rclpy.time import Time
+
+# Topics
 from sensor_msgs.msg import BatteryState       # percentage: 0.0 - 1.0
 from nav_msgs.msg import Odometry
 from irobot_create_msgs.msg import IrIntensityVector
+from irobot_create_msgs.msg import HazardDetectionVector
+from irobot_create_msgs.msg import IrOpcode
+from irobot_create_msgs.msg import KidnapStatus
+from sensor_msgs.msg import Imu
+from tf2_msgs.msg import TFMessage
+from irobot_create_msgs.msg import StopStatus
+from geometry_msgs.msg import Twist
 
+# Services
+
+# Actions
 from irobot_create_msgs.action import Undock      # no parms, result: is_docked: true,false
 from irobot_create_msgs.msg import DockStatus  # is_docked, dock_visible: true,false 
 #from irobot_create_msgs.action import DockServo  # (galactic)
 from irobot_create_msgs.action import Dock
 from irobot_create_msgs.action import RotateAngle  # angle: float32, max_rotation_speed: float32 (1.9r/s), result: pose, Feedback: remaining_angle_travel: float32
+
 
 import sys
 import traceback
@@ -71,7 +88,7 @@ import datetime as dt
 
 DEBUG = False
 # Uncomment for debug prints to console, run kill_docker-r2hdp.sh, then ./run_docker_r2hdp.sh to see console msgs
-DEBUG = True
+# DEBUG = True
 
 NAMESPACE="wali"
 C3IF_LOGFILE="/home/pi/wali_pi5/logs/c3interface.log"
@@ -103,7 +120,7 @@ class C3Interface(Node):
 
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-      printMsg = '\n*** /battery_state subscriber created'
+      printMsg = '*** /battery_state subscriber created'
       self.c3IfLog.info(printMsg)
 
     self.batteryStatePub = self.create_publisher(
@@ -122,7 +139,7 @@ class C3Interface(Node):
 
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-      printMsg = '\n*** /dock_status subscriber created'
+      printMsg = '*** /dock_status subscriber created'
       self.c3IfLog.info(printMsg)
 
     self.dockStatusPub = self.create_publisher(
@@ -141,7 +158,7 @@ class C3Interface(Node):
 
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-      printMsg = '\n*** /odom subscriber created'
+      printMsg = '*** /odom subscriber created'
       self.c3IfLog.info(printMsg)
 
     self.odomPub = self.create_publisher(
@@ -160,13 +177,128 @@ class C3Interface(Node):
 
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-      printMsg = '\n*** /ir_intensity subscriber created'
+      printMsg = '*** /ir_intensity subscriber created'
       self.c3IfLog.info(printMsg)
 
     self.irIntensityPub = self.create_publisher(
       IrIntensityVector,
       NAMESPACE+'/ir_intensity',
       qos_profile_sensor_data)
+
+    # *** hazard_detection topic ***
+    self.hazardDetectionSub = self.create_subscription(
+      HazardDetectionVector,
+      'hazard_detection',
+      self.hazardDetection_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '*** /hazard_detection subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.hazardDetectionPub = self.create_publisher(
+      HazardDetectionVector,
+      NAMESPACE+'/hazard_detection',
+      qos_profile_sensor_data)
+
+    # *** ir_opcode topic ***
+    self.irOpcodeSub = self.create_subscription(
+      IrOpcode,
+      'ir_opcode',
+      self.irOpcode_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '*** /ir_opcode subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.irOpcodePub = self.create_publisher(
+      IrOpcode,
+      NAMESPACE+'/ir_opcode',
+      qos_profile_sensor_data)
+
+    # *** kidnap_status topic ***
+    self.kidnapStatusSub = self.create_subscription(
+      KidnapStatus,
+      'kidnap_status',
+      self.kidnapStatus_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '*** /kidnap_status subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.kidnapStatusPub = self.create_publisher(
+      KidnapStatus,
+      NAMESPACE+'/kidnap_status',
+      qos_profile_sensor_data)
+
+    # *** imu topic ***
+    self.imuSub = self.create_subscription(
+      Imu,
+      'imu',
+      self.imu_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '*** /imu subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.imuPub = self.create_publisher(
+      Imu,
+      NAMESPACE+'/imu',
+      qos_profile_sensor_data)
+
+    # *** stop_status topic ***
+    self.stopStatusSub = self.create_subscription(
+      StopStatus,
+      'stop_status',
+      self.stopStatus_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '*** /stop_status subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.stopStatusPub = self.create_publisher(
+      StopStatus,
+      NAMESPACE+'/stop_status',
+      qos_profile_sensor_data)
+
+    # *** NameSpace/cmd_vel topic ***
+    self.cmdVelSub = self.create_subscription(
+      Twist,
+      NAMESPACE+'/cmd_vel',
+      self.cmdVel_sub_callback,
+      # pick one from following- explicit or named profile
+      # QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+      qos_profile_sensor_data)  # best effort depth 10 sensor profile
+
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = '*** /cmd_vel subscriber created'
+      self.c3IfLog.info(printMsg)
+
+    self.cmdVelPub = self.create_publisher(
+      Twist,
+      'cmd_vel',
+      qos_profile_sensor_data)
+
 
     # *** undock action ***
     self._undock_action_client = ActionClient(self, Undock, 'undock')
@@ -203,6 +335,51 @@ class C3Interface(Node):
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "irIntensity_sub_callback()"
       self.c3IfLog.info(printMsg)
+
+  def hazardDetection_sub_callback(self,msg):
+    self.hazardDetectionPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "hazardDetection_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  def irOpcode_sub_callback(self,msg):
+    self.irOpcodePub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "irOpcode_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  def kidnapStatus_sub_callback(self,msg):
+    self.kidnapStatusPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "kidnapStatus_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  def imu_sub_callback(self,msg):
+    self.imuPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "imu_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  def stopStatus_sub_callback(self,msg):
+    self.stopStatusPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "stopSttus_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  def cmdVel_sub_callback(self,msg):
+    self.cmdVelPub.publish(msg)
+    if DEBUG:
+      dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+      printMsg = "cmdVel_sub_callback()"
+      self.c3IfLog.info(printMsg)
+
+  # *** SERVICES ***
+
 
   # *** ACTIONS ***
   def undock_action_send_goal(self):

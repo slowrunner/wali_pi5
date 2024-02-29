@@ -26,11 +26,13 @@ setup(
             'vel_pwr_test = wali.vel_pwr_test:main',
             'battery_sub = wali.battery_sub:main',
             'ir2scan = wali.ir2scan:main',
+            'ir2scan1 = wali.ir2scan1:main',
             'odometer = wali.odometer:main',
             'say_node = wali.say_node:main',
             'wander = wali.wander:main',
             'wallfollower = wali.wallfollower:main',
             'sub_tf = wali.sub_tf:main',
+            'c3interface = wali.c3interface:main',
             'sub_ir = wali.sub_ir:main'
         ],
     },
