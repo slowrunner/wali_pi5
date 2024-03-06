@@ -159,7 +159,7 @@ class WaLINode(Node):
       printMsg = '\n*** /battery_state subscriber created'
       print(dtstr,printMsg)
 
-    self.battery_state = None
+    self.battery_state = BatteryState()  # None
 
     self.sub = self.create_subscription(
       DockStatus,
@@ -174,7 +174,7 @@ class WaLINode(Node):
       printMsg = '\n*** /dock_status subscriber created'
       print(dtstr,printMsg)
 
-    self.dock_status = None
+    self.dock_status = DockStatus() # None
 
 
     self._undock_action_client = ActionClient(self, Undock, 'undock')

@@ -5,7 +5,7 @@ teleop_twist_joy_node:
     scale_linear:
       x: 0.150
     scale_linear_turbo:
-      x: 0.300   # Turbo = slow in this config.  Any more than 0.19 causes arc to right
+      x: 0.460   # Turbo = slow in this config. 
 
     axis_angular:  # Left thumb stick horizontal
       yaw: 0
