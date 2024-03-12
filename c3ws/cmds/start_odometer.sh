@@ -1,6 +1,9 @@
 #!/bin/bash
 
 
+export FASTRTPS_DEFAULT_PROFILES_FILE=/home/pi/wali_pi5/configs/fastdds-passive-unicast.xml
+# ros2 daemon stop
+
 echo -e "\n*** Switching to ~/pi5desk/c3ws"
 cd ~/wali_pi5/c3ws
 

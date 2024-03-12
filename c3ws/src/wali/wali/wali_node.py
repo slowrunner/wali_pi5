@@ -192,10 +192,12 @@ class WaLINode(Node):
     self.state = "init"
     self.last_undock_time = dt.datetime.now()
     self.last_dock_time = dt.datetime.now()
+    self.all_req_topic_cb_rx = [False, False]  # /battery_state, /dock_status
 
   def battery_state_sub_callback(self,battery_state_msg):
     self.battery_state = battery_state_msg
     self.battery_percentage = self.battery_state.percentage
+    self.all_req_topic_cb_rx[0] = True  # /battery_state, /dock_status
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "battery_state_sub_callback(): battery_state.percentage {:.0f} %".format(100 * self.battery_percentage)
@@ -204,6 +206,7 @@ class WaLINode(Node):
 
   def dock_status_sub_callback(self,dock_status_msg):
     self.dock_status = dock_status_msg
+    self.all_req_topic_cb_rx[1] = True  # /battery_state, /dock_status
     if DEBUG:
       dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       printMsg = "dock_status_sub_callback(): is_docked:{} dock_visible: {}".format(self.dock_status.is_docked, self.dock_status.dock_visible)
@@ -385,8 +388,16 @@ class WaLINode(Node):
 
   def wali_main_cb(self):
     try:
+      if (self.state == "init" and (self.all_req_topic_cb_rx[0] == False or self.all_req_topic_cb_rx[1] == False)):
+        if DEBUG:
+          dtstr = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+          printMsg = "wali_main_cb(): waiting for all_req_topic_cb_rx"
+          print(dtstr, printMsg)
+          printMsg = "wali_main_cb(): cb: battery_state, dock_status = {}".format(self.all_req_topic_cb_rx)
+          print(dtstr, printMsg)
 
-      if (self.dock_status.is_docked):
+
+      elif (self.dock_status.is_docked):
         # Sometimes docking result is not sent or was manually docked so log docked noticed
         # if (self.state == "docking"):
         if (self.state != "docked"):

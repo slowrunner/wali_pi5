@@ -21,6 +21,12 @@ if [ -f /opt/ros/humble/local_setup.bash ]; then
 fi
 
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-export FASTRTPS_DEFAULT_PROFILES_FILE=/home/pi/wali_pi5/configs/super_client_configuration_file01.xml
-export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+# export FASTRTPS_DEFAULT_PROFILES_FILE=/home/pi/wali_pi5/configs/super_client_configuration_file.xml
+# export ROS_DISCOVERY_SERVER=127.0.0.1:11811
 
+# Set up for republisher
+export FASTRTPS_DEFAULT_PROFILES_FILE=~/wali_pi5/configs/fastdds-active-unicast.xml
+ros2 daemon stop
+
+ros2 topic list
+ros2 topic list
