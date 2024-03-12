@@ -1731,4 +1731,8 @@
 2024-03-11 17:28|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
 2024-03-11 20:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
 2024-03-11 20:09|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
-2024-03-12 00:18|lifelogger.dEmain execution: 50.25
+2024-03-12 08:02|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.9 hrs **
+2024-03-12 10:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-12 10:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-12 11:21|lifelogger.dEmain execution: 61.30
+2024-03-12 11:23|[logMaintenance.py.main]** SWITCHING TO WALI_PI4 **
