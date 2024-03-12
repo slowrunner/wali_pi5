@@ -1,0 +1,1734 @@
+# ******  Create3-WaLi life.log  ******* 
+# ** First "life" 2023-12-11 
+2023-12-11 09:17|------------ boot ------------
+2023-12-13 12:13|wali_node.py| ** WaLI node started **
+2023-12-13 12:19|wali_node.py| ** WaLI node started **
+2023-12-13 12:20|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-13 12:57|[logMaintenance.py.main]** CPU usage: max 90 [%] mean 67 [%] RAM usage: 29/59 [MB] **
+2023-12-13 13:14|[logMaintenance.py.main]** undocked pose: x: 0.109  y: 0.002  oz: -0.0228 (-1 deg) **
+2023-12-13 13:57|[logMaintenance.py.main]** Create3 Idle 3.4W 34C **
+2023-12-13 17:15|[logMaintenance.py.main]** Create3 Idle 3.4W 14.48v 43% **
+2023-12-13 19:44|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-13 21:21|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-14 05:02|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-14 06:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-14 14:21|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-14 15:59|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-14 23:38|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-15 01:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-15 08:56|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-15 10:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-15 17:30|[logMaintenance.py.main]** kidnapped while cleaning house **
+2023-12-15 18:13|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-15 18:26|[logMaintenance.py.main]** Stopped Wali_node on dock to change dock lower limit for testing **
+2023-12-15 18:28|[logMaintenance.py.main]** Testing Wali_node with 10% dock-now lower-limit **
+2023-12-15 18:36|wali_node.py| ** WaLI node started - Dock below 10% **
+2023-12-15 19:51|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-15 22:32|[logMaintenance.py.main]** wali_node stopped **
+2023-12-15 22:33|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:36|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:38|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:44|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 22:52|vel_pwr_test.py| ** vel_pwr_test started **
+2023-12-15 23:11|wali_node.py| ** WaLI node started - Dock below 10% **
+2023-12-16 17:58|lifelogger.dEmain execution: 122.0
+2023-12-16 17:58|------------ boot ------------
+2023-12-16 03:37|wali_node.py| ** WaLI Docking: success at battery 8% **
+2023-12-16 05:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-16 11:54|[logMaintenance.py.main]** performed several nav to pos, reset pose **
+2023-12-16 12:46|[logMaintenance.py.main]** flashing red 10.9% **
+2023-12-16 12:52|wali_node.py| ** WaLI Docking: success at battery 9% **
+2023-12-16 14:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-16 14:54|[logMaintenance.py.main]** Shutdown for USB Hub Installation **
+2023-12-16 17:34|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-16 17:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-16 20:45|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-16 20:52|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-16 21:05|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-16 23:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 07:13|lifelogger.dEmain execution: 13.25
+2023-12-17 07:15|[logMaintenance.py.main]** Going down to add power meter **
+2023-12-17 02:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 02:10|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 04:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 07:15|[logMaintenance.py.main]** wali_node error forced Create3 safety shutdown **
+2023-12-17 07:18|------------ boot ------------
+2023-12-17 07:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 07:26|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 07:36|lifelogger.dEmain execution: 0.30
+2023-12-17 07:39|------------ boot ------------
+2023-12-17 09:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 09:40|[logMaintenance.py.main]** Reset Pose 0,0 0deg **
+2023-12-17 12:24|lifelogger.dEmain execution: 4.75
+2023-12-17 13:14|------------ boot ------------
+2023-12-17 13:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 13:20|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 15:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 18:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 18:38|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-17 20:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-17 23:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-17 23:52|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 01:38|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 07:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-18 07:35|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 09:22|lifelogger.dEmain execution: 20
+2023-12-18 09:22|------------ boot ------------
+2023-12-18 09:28|lifelogger.dEmain execution: 0.10
+2023-12-18 09:30|[logMaintenance.py.main]** ran pi5 load test **
+2023-12-18 09:38|------------ boot ------------
+2023-12-18 09:50|lifelogger.dEmain execution: 0.20
+2023-12-18 09:11|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 10:16|------------ boot ------------
+2023-12-18 12:01|lifelogger.dEmain execution: 1.75
+2023-12-18 12:04|------------ boot ------------
+2023-12-18 12:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-18 12:13|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 12:14|[logMaintenance.py.main]** Pi5 running with Oak-D-Lite and speaker on Pi5: 3.4W idle 9.5W running depthai_demo **
+2023-12-18 14:23|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 17:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-18 17:31|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-18 19:43|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-18 22:13|lifelogger.dEmain execution: 10.15
+2023-12-18 22:20|------------ boot ------------
+2023-12-18 22:48|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-19 04:35|lifelogger.dEmain execution: 9.6
+2023-12-19 08:02|------------ boot ------------
+2023-12-19 00:32|[logMaintenance.py.main]** Switching To ROS 2 Humble **
+2023-12-19 00:22|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-19 00:24|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-19 00:44|[logMaintenance.py.main]** Create3-Wali updated to H.2.3 F/W **
+2023-12-19 00:45|[logMaintenance.py.main]** wali_node.py updated to Humble (DockServo->Dock) **
+2023-12-19 08:11|[logMaintenance.py.main]** Error in wali_node.py caused safety shutdown **
+2023-12-19 10:40|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-19 10:41|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-19 14:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-19 14:14|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-19 16:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-19 19:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-19 19:51|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-19 21:49|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 19:14|lifelogger.dEmain execution: 35.20
+2023-12-20 19:16|------------ boot ------------
+2023-12-20 01:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 01:29|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 03:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 06:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 07:06|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 09:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 12:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 12:41|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 14:38|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 18:09|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 18:17|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-20 20:16|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-20 23:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-20 23:51|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 01:50|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 05:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 05:23|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 07:22|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 10:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 10:54|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 13:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 16:24|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 16:31|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-21 18:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-21 21:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-21 22:01|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 00:00|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 03:26|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 03:33|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 05:32|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 08:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 09:04|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 11:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 14:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 14:35|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 16:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-22 19:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-22 20:04|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-22 22:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 01:27|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 01:34|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 03:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 06:58|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 07:05|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 09:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 12:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 12:36|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 14:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 17:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 18:06|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-23 20:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-23 23:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-23 23:25|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-24 01:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 04:51|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-24 04:58|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-24 06:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 09:49|lifelogger.dEmain execution: 87.22
+2023-12-24 10:29|------------ boot ------------
+2023-12-24 10:35|lifelogger.dEmain execution: 0.10
+2023-12-24 10:37|------------ boot ------------
+2023-12-24 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-24 10:43|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-24 12:31|[logMaintenance.py.main]** ****** CUTOVER FROM WALI_NODE ON DESKTOP TO WALI_PI5 **
+2023-12-24 12:31|lifelogger.dEmain execution: 1.90
+2023-12-24 12:34|------------ boot ------------
+2023-12-24 17:37|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-24 17:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-24 16:55|lifelogger.dEmain execution: 4.35
+2023-12-24 19:24|------------ boot ------------
+2023-12-25 00:37|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-25 00:38|wali_node.py| ** WaLI Ready To Dock at battery 10% **
+2023-12-24 19:38|[logMaintenance.py.main]** wali_node GoalStatus import missing caused safety shutdown **
+2023-12-25 00:40|wali_node.py| ** WaLI Docking: success at battery 9% **
+2023-12-25 00:47|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-25 00:48|wali_node.py| ** WaLI Ready To Dock at battery 12% **
+2023-12-25 00:50|wali_node.py| ** WaLI Docking: success at battery 11% **
+2023-12-25 03:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-25 06:20|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-25 06:28|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-25 08:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-25 11:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-25 11:52|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-25 13:54|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-25 10:36|lifelogger.dEmain execution: 15.20
+2023-12-25 10:36|[logMaintenance.py.main]** Restarting to enable RTC backup battery charging **
+2023-12-25 10:38|------------ boot ------------
+2023-12-25 20:13|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-25 23:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-25 23:24|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-26 01:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-25 20:27|[logMaintenance.py.main]** Setup docker.r2hdp service to start at boot time **
+2023-12-26 04:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-26 04:47|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-26 06:49|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-26 10:02|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-26 10:10|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-26 12:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-26 15:26|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-26 15:34|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-26 12:11|lifelogger.dEmain execution: 23.0
+2023-12-26 12:13|[logMaintenance.py.main]** rebooting to apply rpi-eeprom-config for RTC wakeup **
+2023-12-26 12:15|------------ boot ------------
+2023-12-26 17:26|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-26 12:27|lifelogger.dEmain execution: 0.20
+2023-12-26 12:28|[logMaintenance.py.main]** Reboot to test new docker.r2hdp.service file **
+2023-12-26 12:30|------------ boot ------------
+2023-12-26 17:29|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-26 12:33|lifelogger.dEmain execution: 0.05
+2023-12-26 12:40|------------ boot ------------
+2023-12-26 17:39|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-26 17:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-26 12:43|lifelogger.dEmain execution: 0.05
+2023-12-26 12:44|[logMaintenance.py.main]** WaLiPi5 is going to nap for 0.1 hours **
+2023-12-26 12:50|------------ boot ------------
+2023-12-26 17:50|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-26 16:47|lifelogger.dEmain execution: 3.95
+2023-12-26 18:08|------------ boot ------------
+2023-12-26 23:07|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-27 01:45|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-27 04:01|test_wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-27 04:01|test_wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-27 04:04|test_wali_node.py| ** WaLI node started - Dock below 38% **
+2023-12-27 04:10|test_wali_node.py| ** WaLI Ready To Dock at battery 39% **
+2023-12-27 04:12|test_wali_node.py| ** WaLI Docking: success at battery 38% **
+2023-12-27 04:17|test_wali_node.py| ** WaLI node started - Dock below 38% **
+2023-12-27 04:23|test_wali_node.py| ** WaLI Undocking: success at battery 46% **
+2023-12-26 23:44|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-27 00:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-27 00:35|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-27 02:39|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-27 05:52|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-27 05:59|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-27 08:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-27 11:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-27 11:22|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-27 13:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-27 16:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-27 16:45|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-27 18:49|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-27 22:01|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-27 22:08|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-27 23:46|[logMaintenance.py.main]** WaLiPi5 is going to nap for 6.25 hours **
+2023-12-27 23:47|lifelogger.dEmain execution: 29.65
+2023-12-28 06:02|------------ boot ------------
+2023-12-28 06:02|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-28 06:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-28 09:08|[logMaintenance.py.main]** Testing 'dock visible, skip rotate, and dock from 1.5m away' **
+2023-12-28 09:19|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-28 11:24|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-28 14:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-28 14:38|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-28 17:48|wali_node.py| ** Rotate Angle Goal failed with status: 6
+2023-12-28 17:48|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-28 19:54|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-28 23:01|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-28 23:08|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-28 23:47|[logMaintenance.py.main]** WaLiPi5 is going to nap for 7.5 hours **
+2023-12-28 23:47|lifelogger.dEmain execution: 17.75
+2023-12-29 07:18|------------ boot ------------
+2023-12-29 07:18|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-29 07:19|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-29 10:18|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-29 10:25|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-29 12:31|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-29 15:39|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-29 15:46|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-29 17:50|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-29 20:51|lifelogger.dEmain execution: 13.55
+2023-12-29 20:52|[logMaintenance.py.main]** WaLiPi5 is going to nap for 11.0 hours **
+2023-12-30 07:53|------------ boot ------------
+2023-12-30 07:53|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-30 07:54|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-30 12:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-30 15:41|[logMaintenance.py.main]** Stopped wali_node to rebuilt docker with imagemagick **
+2023-12-30 16:11|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-30 16:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-30 19:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-30 19:30|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-30 21:31|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-30 22:23|lifelogger.dEmain execution: 14.50
+2023-12-30 22:24|[logMaintenance.py.main]** WaLiPi5 is going to nap for 9.1 hours **
+2023-12-31 07:32|------------ boot ------------
+2023-12-31 07:32|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-31 07:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-31 09:33|wali_node.py| ** WaLI node started - Dock below 15% **
+2023-12-31 10:35|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-31 10:41|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-31 12:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-31 15:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-31 16:03|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-31 18:05|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2023-12-31 21:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2023-12-31 21:23|wali_node.py| ** WaLI Docking: success at battery 14% **
+2023-12-31 23:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-01 00:34|[logMaintenance.py.main]** WaLiPi5 is going to nap for 7.0 hours **
+2024-01-01 00:35|lifelogger.dEmain execution: 17.05
+2024-01-01 07:35|------------ boot ------------
+2024-01-01 07:36|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-01 07:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-01 10:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-01 10:48|wali_node.py| ** WaLI Docking: success at battery 13% **
+2024-01-01 12:57|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-01 16:02|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-01 16:08|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-01 17:08|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-01 18:14|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-01 21:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-01 21:21|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-01 21:22|wali_node.py| ** WaLI Ready To Dock at battery 14% **
+2024-01-01 21:22|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-01 21:23|wali_node.py| ** WaLI Ready To Dock at battery 14% **
+2024-01-01 21:25|wali_node.py| ** WaLI Docking: success at battery 12% **
+2024-01-01 23:16|[logMaintenance.py.main]** Dead reckoning with map server, static_tf_pub, and floor plan map **
+2024-01-01 23:16|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.25 hours **
+2024-01-01 23:17|lifelogger.dEmain execution: 15.70
+2024-01-02 07:33|------------ boot ------------
+2024-01-02 07:33|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-02 07:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-02 10:43|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-02 10:49|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-02 11:12|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-02 12:51|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-02 13:14|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-02 16:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-02 16:28|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-02 18:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-02 21:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-02 21:47|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-02 23:42|lifelogger.dEmain execution: 16.15
+2024-01-02 23:42|[logMaintenance.py.main]** WaLiPi5 is going to nap for 7.75 hours **
+2024-01-02 23:43|[logMaintenance.py.main]** WaLiPi5 is going to nap for 7.75 hours **
+2024-01-03 07:29|------------ boot ------------
+2024-01-03 07:29|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-03 07:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-03 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-03 10:44|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-03 12:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-03 15:58|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-03 16:05|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-03 18:07|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-03 21:18|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-03 21:25|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-03 22:37|[logMaintenance.py.main]** WaLiPi5 is going to nap for 9.0 hours **
+2024-01-03 22:38|lifelogger.dEmain execution: 15.15
+2024-01-04 07:38|------------ boot ------------
+2024-01-04 07:39|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-04 07:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-04 10:42|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-04 10:48|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-04 11:36|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-04 13:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-04 16:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-04 16:47|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-04 18:51|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-04 21:55|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-04 22:01|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-04 23:25|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-01-04 23:26|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-01-04 23:26|lifelogger.dEmain execution: 15.80
+2024-01-04 23:27|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-01-05 07:28|------------ boot ------------
+2024-01-05 07:28|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-05 10:43|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-05 12:26|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-05 12:46|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-05 15:55|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-05 16:02|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-05 18:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-05 21:13|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-05 21:20|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-05 23:22|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-06 00:05|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-06 00:09|[logMaintenance.py.main]** Create3 crashed after successful rotate_angle 180 **
+2024-01-06 00:09|[logMaintenance.py.main]** WaLiPi5 is going to nap for 7.5 hours **
+2024-01-06 00:10|lifelogger.dEmain execution: 16.70
+2024-01-06 07:41|------------ boot ------------
+2024-01-06 07:41|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-06 07:46|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:48|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:49|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:50|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:51|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:52|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:53|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:54|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:55|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 07:56|wali_node.py| ** WaLI Undocking: failed **
+2024-01-06 08:03|[logMaintenance.py.main]** Create3 would not undock, application restarted **
+2024-01-06 08:05|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-06 08:07|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-06 08:12|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-06 08:13|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-06 11:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-06 11:22|wali_node.py| ** WaLI Docking: success at battery 14% **
+2024-01-06 11:41|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-06 11:43|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-06 11:44|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked **
+2024-01-06 11:49|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-06 12:00|[logMaintenance.py.main]** Dead-Reckoning To Undocked position From Kitchen **
+2024-01-06 12:02|[logMaintenance.py.main]** Arrived at Undocked Position **
+2024-01-06 12:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-06 12:08|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-06 12:08|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-06 12:11|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-06 12:12|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-06 12:15|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-06 12:16|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-06 14:15|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-06 17:22|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-06 17:29|[logMaintenance.py.main]** WalI Docking: success (not reported to client) **
+2024-01-06 17:56|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-06 19:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-06 21:24|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-06 21:58|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-06 22:24|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-06 22:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-06 22:43|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-06 22:43|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-06 23:00|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-06 23:00|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked (and back) **
+2024-01-06 23:02|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-06 23:03|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked position From Kitchen **
+2024-01-06 23:05|[logMaintenance.py.main]** Arrived Back at Undocked Position **
+2024-01-06 23:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-06 23:35|[logMaintenance.py.main]** Dock goal result not received - Docking: success  **
+2024-01-06 23:50|lifelogger.dEmain execution: 16.15
+2024-01-06 23:50|[logMaintenance.py.main]** WaLiPi5 is going to nap for 7.6 hours **
+2024-01-07 07:28|------------ boot ------------
+2024-01-07 07:28|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-07 07:29|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-07 10:25|lifelogger.dEmain execution: 2.95
+2024-01-07 10:25|[logMaintenance.py.main]** rebooting to try lower volume ip_feedback **
+2024-01-07 10:27|------------ boot ------------
+2024-01-07 10:27|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-07 10:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-07 11:17|[logMaintenance.py.main]** WaLi Docking: success (no completion status at client) **
+2024-01-07 12:42|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-07 15:51|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-07 16:00|[logMaintenance.py.main]** WalI Docking: success (no completion status at client) **
+2024-01-07 17:58|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-07 21:06|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-07 21:10|[logMaintenance.py.main]** Dock goal result not received - Docking: success  **
+2024-01-07 21:16|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-07 23:14|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-08 02:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-08 02:28|[logMaintenance.py.main]** Dock goal result not received - Docking: success  **
+2024-01-08 04:31|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-08 07:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-08 07:44|[logMaintenance.py.main]** Dock goal result not received - Docking: success  **
+2024-01-08 08:08|wali_node.py| ** WaLI node started - Dock below 15% **
+2024-01-08 08:10|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-08 08:12|[logMaintenance.py.main]** Running Wali_node to see debug msgs - undocked early to test **
+2024-01-08 08:39|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-08 08:44|[logMaintenance.py.main]** Dock goal result not received - Docking: success  **
+2024-01-08 09:44|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-08 10:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-08 13:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-08 14:02|wali_node.py| ** WaLI Noticed Docking: success at battery 15% **
+2024-01-08 16:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-08 19:10|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-08 19:18|wali_node.py| ** WaLI Noticed Docking: success at battery 15% **
+2024-01-08 21:19|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-09 00:55|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-09 03:11|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-09 06:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-09 06:28|wali_node.py| ** WaLI Noticed Docking: success at battery 15% **
+2024-01-09 08:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-09 10:18|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-09 10:19|[logMaintenance.py.main]** Integrated piper for ROS 2 wali.say_node svc **
+2024-01-09 11:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-09 11:44|wali_node.py| ** WaLI Noticed Docking: success at battery 15% **
+2024-01-09 13:24|[logMaintenance.py.main]** Stopping Wali_Node to try H.2.4 Firmware **
+2024-01-09 13:26|[logMaintenance.py.main]** WaLiPi5 is going to nap for 0.5 hours **
+2024-01-09 13:27|lifelogger.dEmain execution: 51.00
+2024-01-09 13:57|------------ boot ------------
+2024-01-09 13:57|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-09 13:58|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-09 17:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-09 17:11|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-09 17:58|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-09 17:59|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked (and back) **
+2024-01-09 18:01|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-09 18:02|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked position From Kitchen **
+2024-01-09 18:04|[logMaintenance.py.main]** Arrived Back at Undocked Position **
+2024-01-09 18:05|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-09 18:05|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-09 18:12|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-09 18:12|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked (and back) **
+2024-01-09 18:14|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-09 18:15|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked position From Kitchen **
+2024-01-09 18:17|[logMaintenance.py.main]** Arrived Back at Undocked Position **
+2024-01-09 18:22|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked (and back) **
+2024-01-09 18:25|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-09 18:25|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked position From Kitchen **
+2024-01-09 18:27|[logMaintenance.py.main]** Arrived Back at Undocked Position **
+2024-01-09 19:13|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-09 19:18|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-09 21:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-09 22:23|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked (and back) **
+2024-01-09 22:25|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-09 22:25|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked position From Kitchen **
+2024-01-09 22:28|[logMaintenance.py.main]** Arrived Back at Undocked Position **
+2024-01-09 22:30|[logMaintenance.py.main]** Dead-Reckoning To Kitchen From Undocked (and back) **
+2024-01-09 22:33|[logMaintenance.py.main]** Arrived at Kitchen **
+2024-01-09 22:33|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked position From Kitchen **
+2024-01-09 22:35|[logMaintenance.py.main]** Arrived Back at Undocked Position **
+2024-01-10 00:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-10 00:38|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-10 02:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-10 05:49|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-10 05:56|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-10 07:52|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-10 07:58|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-10 08:37|[logMaintenance.py.main]** Dead-Reckoning To The Front Door From Undocked (and back) **
+2024-01-10 08:40|[logMaintenance.py.main]** Arrived at front door **
+2024-01-10 08:40|[logMaintenance.py.main]** Dead-Reckoning Back To Undocked Position From The Front Door **
+2024-01-10 08:46|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-10 08:47|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-10 09:15|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-10 12:24|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-10 12:31|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-10 14:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-10 17:42|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-10 17:48|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-10 19:49|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-10 22:58|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-10 23:05|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-11 01:06|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-11 04:15|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-11 04:22|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-11 06:24|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-11 09:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-11 09:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-11 11:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-11 14:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-11 14:54|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-11 16:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-11 20:02|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-11 20:08|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-11 20:21|[logMaintenance.py.main]** Create3_Coverage example successfully ported to Humble **
+2024-01-11 22:10|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-12 01:18|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-12 01:24|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-12 03:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-12 06:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-12 06:40|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-12 08:42|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-12 09:05|[logMaintenance.py.main]** Create3 up 2d 19h 15min load ave: 2.27  CPU mean: 57-67% Mem Used: 39/59MB **
+2024-01-12 11:45|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-12 11:51|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-12 13:52|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-12 16:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-12 17:05|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-12 19:06|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-12 22:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-12 22:21|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-12 23:50|[logMaintenance.py.main]** killed Create3 with ros2 topic echo /tf - CPU 100% and missed message notices **
+2024-01-13 00:22|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-13 00:34|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-13 02:18|[logMaintenance.py.main]** Performed IR Intensity testing **
+2024-01-13 03:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-13 03:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-13 05:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-13 08:45|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-13 08:51|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-13 09:40|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-13 10:22|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-13 10:22|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-13 12:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-13 15:11|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-13 15:17|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-13 17:18|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-13 20:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-13 20:32|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-13 22:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-14 01:41|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-14 01:47|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-14 03:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-14 06:55|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-14 07:01|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-14 09:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-14 12:09|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-14 12:15|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-14 14:17|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-14 17:24|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-14 17:31|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-14 19:32|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-14 22:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-14 22:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-15 00:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-15 03:52|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-15 03:58|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-15 05:59|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-15 09:05|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-15 09:06|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-15 09:11|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-15 11:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-15 12:30|[logMaintenance.py.main]** Wali Wander broke 1k traveled today! **
+2024-01-15 14:08|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-15 14:15|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-15 16:18|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-15 19:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-15 19:25|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-15 21:27|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-16 00:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-16 00:34|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-16 02:36|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-16 05:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-16 05:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-16 07:45|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-16 08:34|[logMaintenance.py.main]** Started Wander Test **
+2024-01-16 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-16 10:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-16 10:39|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-01-16 10:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-16 12:46|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-16 15:15|[logMaintenance.py.main]** Total Travel:  1352.9 meters 4438.6 feet **
+2024-01-16 15:16|[logMaintenance.py.main]** Wali Memory 41/59MB **
+2024-01-16 15:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-16 15:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-16 17:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-16 20:53|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-16 20:59|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-16 21:33|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-16 21:34|[logMaintenance.py.main]** Built Docker r2hdp with depthai and rtabmap **
+2024-01-16 21:35|[logMaintenance.py.main]** Restarted Docker w/wali **
+2024-01-16 23:00|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-17 00:49|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-17 02:05|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-17 02:12|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-17 04:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-17 07:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-17 07:25|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-17 09:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-17 12:12|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-17 12:16|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-17 14:18|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-17 17:06|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-17 17:12|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-17 19:21|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-17 20:15|lifelogger.dEmain execution: 198.30
+2024-01-17 20:21|------------ boot ------------
+2024-01-17 20:21|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-17 20:36|[logMaintenance.py.main]** spatial_tiny_yolo -d in TigerVNC eventually crashed machine (load 6.0) **
+2024-01-17 21:51|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-17 21:56|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-18 00:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-18 02:49|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-18 02:55|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-18 05:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-18 07:50|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-18 07:56|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-18 10:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-18 12:52|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-18 12:57|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-18 15:05|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-18 17:52|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-18 17:58|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-18 20:07|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-18 22:53|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-18 23:00|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-19 01:07|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-19 03:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-19 04:00|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-19 06:08|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-19 08:39|lifelogger.dEmain execution: 36.30
+2024-01-19 08:43|------------ boot ------------
+2024-01-19 08:43|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-19 08:44|wali_node.py| ** WaLI Ready To Dock at battery 15% **
+2024-01-19 08:45|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-19 08:54|[logMaintenance.py.main]** gui_spatial_tiny_yolo.py killed Pi5 (again) **
+2024-01-19 10:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-19 13:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-19 13:46|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-19 15:54|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-19 18:43|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-19 18:49|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-20 10:13|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-20 13:37|lifelogger.dEmain execution: 28.90
+2024-01-20 21:28|------------ boot ------------
+2024-01-20 21:28|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-20 21:56|[logMaintenance.py.main]** Wali executed safety shutdown - reason unknown **
+2024-01-20 21:57|[logMaintenance.py.main]** Was running Luxonis depthai-ros docker **
+2024-01-20 23:57|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-20 23:58|[logMaintenance.py.main]** depthai-ros docker kills r2hdp container - that is cause of issue today **
+2024-01-21 00:29|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-21 03:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-21 03:27|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-21 05:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-21 08:15|[logMaintenance.py.main]** restart of Create3:  used memory back to 39MB **
+2024-01-21 08:16|[logMaintenance.py.main]** restart of Create3:  15m load average 2.12 overnight **
+2024-01-21 08:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-21 08:38|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-21 11:15|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-21 13:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-21 13:39|[logMaintenance.py.main]** restarting r2hdp to test dual docker issue **
+2024-01-21 13:41|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-21 15:58|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-21 19:24|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-21 19:26|[logMaintenance.py.main]** Manual Docking: success - wali down for rebuilding container with depthai-ros **
+2024-01-21 19:29|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-21 19:32|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-21 19:34|lifelogger.dEmain execution: 22.10
+2024-01-21 19:45|------------ boot ------------
+2024-01-21 19:45|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-21 19:47|[logMaintenance.py.main]** Total System Restart - unknown weirdness **
+2024-01-21 20:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-21 23:02|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-21 23:08|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-22 01:21|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-22 04:11|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-22 04:17|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-22 06:30|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-22 09:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-22 09:25|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-22 11:39|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-22 14:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-22 14:34|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-22 16:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-22 19:20|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-22 19:26|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-22 21:36|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-23 00:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-23 00:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-23 02:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-23 05:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-23 05:46|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-23 07:57|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-23 10:50|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-23 10:56|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-23 13:07|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-23 16:00|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-23 16:06|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-23 18:17|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-23 19:05|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-23 21:06|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-23 21:13|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-23 23:26|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-24 02:15|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-24 02:21|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-24 04:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-24 07:22|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-24 07:28|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-24 09:41|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-24 12:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-24 12:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-24 14:48|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-24 17:36|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-24 17:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-24 19:55|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-24 22:43|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-24 22:49|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-24 23:42|lifelogger.dEmain execution: 75.95
+2024-01-24 23:43|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-01-25 07:44|------------ boot ------------
+2024-01-25 07:44|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-25 07:45|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-25 10:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-25 10:37|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-25 11:57|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-25 13:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-25 13:26|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-25 15:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-25 18:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-25 18:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-25 20:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-25 23:26|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-25 23:26|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-25 23:26|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-01-25 23:26|lifelogger.dEmain execution: 15.70
+2024-01-25 23:26|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8 hours **
+2024-01-25 23:27|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8 hours **
+2024-01-26 07:28|------------ boot ------------
+2024-01-26 07:28|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-26 07:29|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-26 10:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-26 10:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-26 12:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-26 15:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-26 15:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-26 17:43|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-26 20:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-26 20:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-26 22:52|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-26 23:20|[logMaintenance.py.main]** Manual Docking For Night at 88% battery **
+2024-01-26 23:21|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-01-26 23:21|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-26 23:22|lifelogger.dEmain execution: 15.90
+2024-01-26 23:22|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8 hours **
+2024-01-27 07:23|------------ boot ------------
+2024-01-27 07:24|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-27 07:25|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-27 10:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-27 10:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-27 12:34|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-27 15:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-27 15:34|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-27 17:42|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-27 20:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-27 20:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-27 22:51|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-28 01:41|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-28 01:47|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-28 03:58|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-28 06:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-28 06:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-28 09:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-28 11:53|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-28 11:59|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-28 12:46|[logMaintenance.py.main]** Undocking to test wallfollower with virtual wall **
+2024-01-28 12:46|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-28 13:39|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-28 13:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-28 13:41|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-01-28 13:42|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-01-28 13:43|wali_node.py| ** WaLI Ready To Dock at battery 15% **
+2024-01-28 13:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-28 13:46|[logMaintenance.py.main]** Had to fight wali to stay ready to dock, need to change rotate 180 to rotate till see dock **
+2024-01-28 15:31|[logMaintenance.py.main]** Undocking to test virtual_wall **
+2024-01-28 15:32|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-28 16:06|[logMaintenance.py.main]** Documenting weird no topics from Create3 **
+2024-01-28 16:24|[logMaintenance.py.main]** Restarting ROS 2 Docker container (and Wali) **
+2024-01-28 16:26|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-28 16:30|[logMaintenance.py.main]** About to restart Create3 - Wali subscribing caused 100% CPU **
+2024-01-28 16:32|lifelogger.dEmain execution: 33.15
+2024-01-28 16:43|------------ boot ------------
+2024-01-28 16:44|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-28 20:20|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-28 20:21|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-28 20:22|[logMaintenance.py.main]** Somehow docker had a problem starting after reboot, restarted now **
+2024-01-28 20:39|[logMaintenance.py.main]** Testing echo ir_opcode - seems to jam Create3 to 100% CPU **
+2024-01-28 21:22|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-01-28 21:26|[logMaintenance.py.main]** rebuilt docker r2hdp **
+2024-01-28 22:17|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-28 23:37|[logMaintenance.py.main]** Issued reset_pose **
+2024-01-28 23:38|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-01-29 01:06|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-29 01:13|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-29 03:23|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-29 06:12|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-29 06:18|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-29 08:28|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-29 09:21|[logMaintenance.py.main]** Test of wallfollower on right side **
+2024-01-29 11:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-29 11:22|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-29 13:32|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-29 16:20|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-29 16:27|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-29 18:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-29 21:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-29 21:32|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-29 23:42|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-30 02:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-30 02:37|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-30 04:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-30 07:35|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-30 07:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-30 09:52|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-30 12:39|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-30 12:45|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-30 14:56|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-30 17:42|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-30 17:49|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-30 20:00|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-30 22:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-30 22:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-31 01:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-31 03:50|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-31 03:57|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-31 06:07|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-31 08:53|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-31 09:00|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-31 11:11|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-31 13:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-31 14:04|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-31 16:15|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-01-31 19:01|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-01-31 19:07|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-01-31 21:17|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-01 00:03|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-01 00:10|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-01 02:20|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-01 05:06|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-01 05:13|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-01 07:24|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-01 10:21|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-01 10:22|[logMaintenance.py.main]** Discovered Docker exited, reason unknown **
+2024-02-01 10:22|wali_node.py| ** WaLI Ready To Dock at battery 11% **
+2024-02-01 10:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 10% **
+2024-02-01 12:39|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-01 15:26|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-01 15:31|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-01 17:41|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-01 20:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-01 20:33|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-01 22:43|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-02 01:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-02 01:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-02 03:45|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-02 06:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-02 06:37|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-02 08:47|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-02 11:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-02 11:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-02 13:49|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-02 16:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-02 16:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-02 18:46|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-02 21:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-02 21:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-02 23:14|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-03 00:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-03 01:06|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-03 01:56|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-03 02:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-03 02:52|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-03 05:00|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-03 07:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-03 07:52|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-03 09:54|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-03 10:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-03 12:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-03 12:54|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-03 15:03|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-03 17:49|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-03 17:55|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-03 20:04|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-03 22:34|[logMaintenance.py.main]** Stopping Wali for Docker Rebuild **
+2024-02-03 23:06|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-03 23:07|wali_node.py| ** WaLI Ready To Dock at battery 9% **
+2024-02-03 23:08|wali_node.py| ** WaLI dock goal result - Docking: success at battery 8% **
+2024-02-04 00:09|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-04 00:11|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-04 01:28|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-04 04:15|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-04 04:21|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-04 06:32|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-04 09:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-04 09:24|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-04 11:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-04 14:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-04 14:27|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-04 16:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-04 19:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-04 19:31|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-04 21:34|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-04 21:34|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-05 00:10|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 00:16|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-05 02:26|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-05 05:12|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 05:18|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-05 07:28|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-05 10:15|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 10:20|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-05 11:00|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 11:04|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-05 11:46|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-05 12:02|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 12:08|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-05 12:16|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-05 12:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 12:20|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% **
+2024-02-05 14:32|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-05 17:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 17:19|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.79 hrs playtime **
+2024-02-05 19:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-05 22:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-05 22:24|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.66 hrs playtime **
+2024-02-06 00:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-06 03:18|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-06 03:24|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.85 hrs playtime **
+2024-02-06 05:36|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-06 08:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-06 08:19|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.71 hrs playtime **
+2024-02-06 11:40|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-06 12:07|[logMaintenance.py.main]** restarting docker/wali to try new wali_node that logs hours at play **
+2024-02-06 12:17|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-06 12:19|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-06 12:21|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-02-06 12:21|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-06 12:22|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-06 12:25|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-06 12:28|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-02-06 12:28|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-06 12:29|wali_node.py| ** WaLI Noticed Docking: success at battery 82% after 0.1 hrs playtime **
+2024-02-06 12:30|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-06 13:10|lifelogger.dEmain execution: 212.40
+2024-02-06 13:22|------------ boot ------------
+2024-02-06 13:22|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-06 13:29|[logMaintenance.py.main]** Pi5 died running rtabmap **
+2024-02-06 14:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-06 14:20|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.6 hrs playtime **
+2024-02-06 15:37|[logMaintenance.py.main]** yolo4 running requires source dai_ws and activate venv **
+2024-02-06 16:42|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.4 hrs **
+2024-02-06 18:59|[logMaintenance.py.main]** dock to start rtabmap at 0,0,0 **
+2024-02-06 19:00|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-02-06 19:00|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-06 19:00|wali_node.py| ** WaLI Noticed Docking: success at battery 27% after 2.3 hrs playtime **
+2024-02-06 19:05|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-06 19:05|wali_node.py| ** WaLI Noticed Undocking: success at battery 28%, docked for 0.1 hrs **
+2024-02-06 19:11|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-02-06 19:12|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-06 19:12|wali_node.py| ** WaLI Noticed Docking: success at battery 23% after 0.1 hrs playtime **
+2024-02-06 20:02|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-06 20:02|wali_node.py| ** WaLI Noticed Undocking: success at battery 49%, docked for 0.8 hrs **
+2024-02-06 20:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-06 20:41|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 0.7 hrs playtime **
+2024-02-06 22:52|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-07 01:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-07 01:38|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-07 03:50|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-07 06:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-07 06:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-07 08:48|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-07 11:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-07 11:34|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-07 12:35|[logMaintenance.py.main]** restarting wali with docking log string updated **
+2024-02-07 12:36|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-07 13:46|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-07 16:26|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-07 16:31|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-07 18:43|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-07 21:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-07 21:30|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-07 23:42|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-08 01:39|[logMaintenance.py.main]** Ran Oak-D-Lite camera.launch.py for 25 minutes (Create3 at 100% CPU) (Pi5 average 1.0 max 2) **
+2024-02-08 01:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-08 02:00|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.3 hrs playtime **
+2024-02-08 04:33|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.5 hrs **
+2024-02-08 07:13|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-08 07:18|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-08 09:29|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-08 11:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-08 11:11|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.7 hrs playtime **
+2024-02-08 14:58|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 3.8 hrs **
+2024-02-08 17:03|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-08 17:07|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.2 hrs playtime **
+2024-02-08 19:53|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.8 hrs **
+2024-02-08 21:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-08 22:02|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.2 hrs playtime **
+2024-02-09 01:07|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 3.1 hrs **
+2024-02-09 03:10|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-09 03:11|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-02-09 03:12|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-02-09 03:15|wali_node.py| ** Rotate Angle Goal failed with status: 6
+2024-02-09 03:16|wali_node.py| ** WaLi dock goal result - Docking: failed **
+2024-02-09 03:16|wali_node.py| ** WaLI Ready To Dock at battery 13% **
+2024-02-09 03:17|wali_node.py| ** WaLI Ready To Dock at battery 12% **
+2024-02-09 03:19|wali_node.py| ** WaLI Ready To Dock at battery 10% **
+2024-02-09 03:19|wali_node.py| ** WaLI Ready To Dock at battery 10% **
+2024-02-09 03:23|wali_node.py| ** Rotate Angle Goal failed with status: 6
+2024-02-09 03:23|wali_node.py| ** Rotate Angle Goal failed with status: 6
+2024-02-09 03:24|wali_node.py| ** WaLI Noticed Docking: success at battery 8% after 2.3 hrs playtime **
+2024-02-09 03:27|[logMaintenance.py.main]** Wali got stuck against wall while trying  to dock **
+2024-02-09 05:49|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.4 hrs **
+2024-02-09 08:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-09 08:33|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-09 10:51|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.3 hrs **
+2024-02-09 13:30|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-02-09 13:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-09 15:51|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.3 hrs **
+2024-02-09 18:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-09 18:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-09 20:52|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.3 hrs **
+2024-02-09 23:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-09 23:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-10 00:28|lifelogger.dEmain execution: 83.10
+2024-02-10 00:28|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-02-10 08:30|------------ boot ------------
+2024-02-10 08:30|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-10 08:32|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 8.0 hrs **
+2024-02-10 11:10|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-10 11:16|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-10 13:30|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-10 16:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-10 16:24|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-10 18:35|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-10 18:40|[logMaintenance.py.main]** Perform fastDDS launch_camera test **
+2024-02-10 19:15|lifelogger.dEmain execution: 10.75
+2024-02-10 19:25|[logMaintenance.py.main]** Wali Pi5 crashed during test, resumed **
+2024-02-10 19:25|------------ boot ------------
+2024-02-10 19:25|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-10 19:50|[logMaintenance.py.main]** Wali not responding to cmd_vel topics reliably **
+2024-02-10 20:24|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-10 20:27|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.87 hrs playtime **
+2024-02-10 20:44|[logMaintenance.py.main]** Test resumed and Wali did his thing **
+2024-02-10 20:50|[logMaintenance.py.main]** Wali pulling 9.6W with Oak-D-Lite publishing wide FOV RGB raw, MobileNet, and stereo depth **
+2024-02-10 22:04|lifelogger.dEmain execution: 2.65
+2024-02-10 22:11|[logMaintenance.py.main]** Wali Pi5 crashed, during test **
+2024-02-10 22:12|------------ boot ------------
+2024-02-10 22:12|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-10 23:27|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-02-11 00:12|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-02-11 00:12|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-11 00:12|lifelogger.dEmain execution: 2.00
+2024-02-11 00:12|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.0 hours **
+2024-02-11 08:14|------------ boot ------------
+2024-02-11 08:14|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-11 08:14|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 8.0 hrs **
+2024-02-11 09:33|[logMaintenance.py.main]** Restarted Docker to pickup latest wali_node change **
+2024-02-11 11:00|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-11 11:06|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.85 hrs playtime **
+2024-02-11 11:38|[logMaintenance.py.main]** power off to change meter **
+2024-02-11 11:38|lifelogger.dEmain execution: 3.40
+2024-02-11 11:43|------------ boot ------------
+2024-02-11 11:44|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-11 12:04|lifelogger.dEmain execution: 0.35
+2024-02-11 12:27|------------ boot ------------
+2024-02-11 12:27|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-11 13:27|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.35 hrs **
+2024-02-11 13:29|[logMaintenance.py.main]** Wali crash was from camera.launch.py **
+2024-02-11 16:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-11 16:20|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-11 18:32|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-11 18:42|lifelogger.dEmain execution: 6.25
+2024-02-11 18:46|------------ boot ------------
+2024-02-11 18:46|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-11 19:25|lifelogger.dEmain execution: 0.65
+2024-02-11 19:31|------------ boot ------------
+2024-02-11 19:31|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-11 19:54|[logMaintenance.py.main]** camera depthai crash testing **
+2024-02-11 21:01|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-11 21:07|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.6 hrs playtime **
+2024-02-11 23:19|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-11 23:28|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.5 hours **
+2024-02-11 23:28|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.5 hours **
+2024-02-11 23:28|lifelogger.dEmain execution: 3.95
+2024-02-12 08:00|------------ boot ------------
+2024-02-12 08:00|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-12 08:01|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-12 10:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-12 10:46|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-12 11:21|[logMaintenance.py.main]** Oak-D-Lite powered by Pololo 5.1v 2A supply from Create3 14.4v tap **
+2024-02-12 13:08|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.4 hrs **
+2024-02-12 15:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-12 15:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-12 18:09|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.3 hrs **
+2024-02-12 20:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-12 20:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-12 23:08|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-13 01:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-13 01:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-13 04:08|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-13 06:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-13 06:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-13 09:09|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.3 hrs **
+2024-02-13 11:41|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-13 11:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.6 hrs playtime **
+2024-02-13 12:09|lifelogger.dEmain execution: 28.15
+2024-02-13 12:09|[logMaintenance.py.main]** console_tiny_yolo4 test success, no crashes **
+2024-02-13 12:10|[logMaintenance.py.main]** rebooting to get vncserver up **
+2024-02-13 12:12|------------ boot ------------
+2024-02-13 12:12|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-13 14:08|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 1.9 hrs **
+2024-02-13 15:59|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-13 16:02|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.9 hrs playtime **
+2024-02-13 17:29|[logMaintenance.py.main]** Shutting down to make a backup **
+2024-02-13 17:30|lifelogger.dEmain execution: 5.30
+2024-02-13 19:27|------------ boot ------------
+2024-02-13 19:27|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-13 19:28|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-13 21:16|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-13 21:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.9 hrs playtime **
+2024-02-13 23:44|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.4 hrs **
+2024-02-14 01:43|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-14 01:46|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.0 hrs playtime **
+2024-02-14 01:57|lifelogger.dEmain execution: 6.50
+2024-02-14 01:57|[logMaintenance.py.main]** WaLiPi5 is going to nap for 9 hours **
+2024-02-14 09:39|------------ boot ------------
+2024-02-14 09:39|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-14 10:54|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-14 11:52|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-02-14 11:52|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-14 11:52|wali_node.py| ** WaLI Noticed Docking: success at battery 52% after 2.2 hrs playtime **
+2024-02-14 12:02|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-14 12:04|[logMaintenance.py.main]** Total Power Off With estop to reset everything **
+2024-02-14 12:08|[logMaintenance.py.main]** Went to ship mode, restarting application from website **
+2024-02-14 12:36|lifelogger.dEmain execution: 2.95
+2024-02-14 12:37|[logMaintenance.py.main]** again trying power down with button this time **
+2024-02-14 12:43|------------ boot ------------
+2024-02-14 12:44|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-14 12:57|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-14 12:58|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-14 13:22|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-14 13:26|wali_node.py| ** WaLI Ready To Dock at battery 14% **
+2024-02-14 13:28|wali_node.py| ** WaLI dock goal result - Docking: success at battery 13% after 1.5 hrs playtime **
+2024-02-14 15:31|[logMaintenance.py.main]** rebooting to try vnc **
+2024-02-14 15:31|lifelogger.dEmain execution: 2.80
+2024-02-14 15:34|------------ boot ------------
+2024-02-14 15:34|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-14 15:44|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-14 18:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-14 18:32|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-14 19:16|lifelogger.dEmain execution: 3.70
+2024-02-14 19:18|[logMaintenance.py.main]** VNC off, Switching to X11 **
+2024-02-14 19:20|------------ boot ------------
+2024-02-14 19:20|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-14 19:23|------------ boot ------------
+2024-02-14 19:23|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-14 20:45|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.25 hrs **
+2024-02-14 23:28|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-14 23:34|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-14 23:38|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.5 hours **
+2024-02-14 23:38|lifelogger.dEmain execution: 4.25
+2024-02-15 08:09|------------ boot ------------
+2024-02-15 08:09|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 08:10|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-15 10:27|lifelogger.dEmain execution: 2.30
+2024-02-15 10:28|[logMaintenance.py.main]** reboot to add usb0 network **
+2024-02-15 10:33|------------ boot ------------
+2024-02-15 10:34|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 10:42|lifelogger.dEmain execution: 0.15
+2024-02-15 10:43|[logMaintenance.py.main]** reboot for bootloader update **
+2024-02-15 10:46|------------ boot ------------
+2024-02-15 10:46|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 10:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-15 10:51|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-15 10:55|lifelogger.dEmain execution: 0.15
+2024-02-15 10:55|[logMaintenance.py.main]** Trying cold boot to enable usb0 **
+2024-02-15 10:57|------------ boot ------------
+2024-02-15 10:58|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 11:18|lifelogger.dEmain execution: 0.35
+2024-02-15 21:57|------------ boot ------------
+2024-02-15 21:57|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 21:59|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-15 22:06|lifelogger.dEmain execution: 0.15
+2024-02-15 22:07|[logMaintenance.py.main]** up in deskpi5 at dot 220 **
+2024-02-15 22:10|------------ boot ------------
+2024-02-15 22:10|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 22:49|lifelogger.dEmain execution: 0.65
+2024-02-15 22:51|[logMaintenance.py.main]** trying ip_feedback again **
+2024-02-15 22:55|------------ boot ------------
+2024-02-15 22:55|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-15 23:25|lifelogger.dEmain execution: 0.50
+2024-02-15 23:33|------------ boot ------------
+2024-02-15 23:33|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 00:00|lifelogger.dEmain execution: 0.45
+2024-02-16 00:07|------------ boot ------------
+2024-02-16 00:07|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 00:19|lifelogger.dEmain execution: 0.20
+2024-02-16 00:22|------------ boot ------------
+2024-02-16 00:22|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 00:25|[logMaintenance.py.main]** walipi5 is available at 192.168.186.3 over usb0 **
+2024-02-16 00:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-16 01:01|lifelogger.dEmain execution: 0.65
+2024-02-16 01:13|------------ boot ------------
+2024-02-16 01:13|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 01:38|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 01:41|[logMaintenance.py.main]** WaLiPi5 is going to nap for 8.7 hours **
+2024-02-16 01:43|lifelogger.dEmain execution: 0.50
+2024-02-16 10:30|------------ boot ------------
+2024-02-16 10:30|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 10:31|[logMaintenance.py.main]** nap did not work - reported device tree busy **
+2024-02-16 10:36|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-16 11:11|[logMaintenance.py.main]** Test of nap **
+2024-02-16 11:11|[logMaintenance.py.main]** WaLiPi5 is going to nap for 0.75 hours **
+2024-02-16 11:12|lifelogger.dEmain execution: 0.70
+2024-02-16 11:54|------------ boot ------------
+2024-02-16 11:55|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-16 13:19|[logMaintenance.py.main]** wakeup alarm feature blocked by usb0 networking feature **
+2024-02-16 13:35|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-16 13:41|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.8 hrs playtime **
+2024-02-16 15:53|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-16 18:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-16 18:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-16 20:53|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-16 23:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-16 23:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-17 01:53|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-17 04:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-17 04:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-17 06:53|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-17 09:36|[logMaintenance.py.main]** Put Create3 in standby (10s Button 1 - left of center power button) **
+2024-02-17 09:40|[logMaintenance.py.main]** Awakened Create3 with 1s press of center power button **
+2024-02-17 09:41|wali_node.py| ** WaLI Ready To Dock at battery 15% **
+2024-02-17 09:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-17 09:44|[logMaintenance.py.main]** Shutdown Create3 while on dock (10s center power button) **
+2024-02-17 09:48|lifelogger.dEmain execution: 21.90
+2024-02-17 09:51|------------ boot ------------
+2024-02-17 09:52|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-17 10:05|[logMaintenance.py.main]** Shut Down  Robot - off dock center button 10s **
+2024-02-17 10:05|[logMaintenance.py.main]** Restarted  Robot - Placed On Dock **
+2024-02-17 11:33|lifelogger.dEmain execution: 1.70
+2024-02-17 12:46|------------ boot ------------
+2024-02-17 12:46|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-17 12:52|lifelogger.dEmain execution: 0.10
+2024-02-17 12:55|------------ boot ------------
+2024-02-17 12:55|[logMaintenance.py.main]** Trouble rebooting Create3 **
+2024-02-17 12:55|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-17 13:03|[logMaintenance.py.main]** Trouble rebooting Create3 resolved by another total power off (off dock) and return to dock **
+2024-02-17 14:11|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-17 14:12|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-17 14:30|[logMaintenance.py.main]** Discovery Server Testing **
+2024-02-17 16:55|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-17 17:01|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-17 19:13|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-17 21:57|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-17 22:02|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-17 22:03|[logMaintenance.py.main]** WaLiPi5 is going to nap for 10.5 hours **
+2024-02-17 22:04|lifelogger.dEmain execution: 9.15
+2024-02-18 09:28|------------ boot ------------
+2024-02-18 09:28|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-18 09:29|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-18 11:40|lifelogger.dEmain execution: 2.20
+2024-02-18 11:41|[logMaintenance.py.main]** Testing new ntp.conf file, restarting Create3 **
+2024-02-18 11:50|------------ boot ------------
+2024-02-18 11:50|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-18 12:00|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-18 13:57|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-18 13:57|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-18 13:58|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-18 16:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-18 16:52|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-18 17:52|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-18 19:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 1.1 hrs **
+2024-02-18 21:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-18 21:50|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-18 23:26|lifelogger.dEmain execution: 11.60
+2024-02-18 23:26|[logMaintenance.py.main]** WaLiPi5 is going to nap for 9 hours **
+2024-02-19 08:32|------------ boot ------------
+2024-02-19 08:32|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-19 08:33|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-19 11:10|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-19 11:16|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-19 13:28|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-19 16:12|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-19 16:17|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-19 18:27|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-19 21:11|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-19 21:17|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-19 21:47|lifelogger.dEmain execution: 13.25
+2024-02-19 21:51|[logMaintenance.py.main]** WaLiPi5 is going to nap for 0.1 hours **
+2024-02-19 21:51|------------ boot ------------
+2024-02-19 21:51|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-19 21:48|lifelogger.dEmain execution: 0.1
+2024-02-19 21:58|------------ boot ------------
+2024-02-19 21:59|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-19 23:26|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.15 hrs **
+2024-02-20 02:09|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-20 02:19|lifelogger.dEmain execution: 4.35
+2024-02-20 02:20|[logMaintenance.py.main]** WaLiPi5 is going to nap for 6 hours **
+2024-02-20 08:21|------------ boot ------------
+2024-02-20 08:21|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-20 08:22|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-20 08:36|[logMaintenance.py.main]** fixed not waking up issue by re-editing eeprom POWER_OFF_ON_HALT=1 (was reset to 0 by rpi-update) **
+2024-02-20 11:03|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-20 11:07|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-20 13:27|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.3 hrs **
+2024-02-20 16:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-20 16:09|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-20 18:23|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-20 21:00|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-20 21:06|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-20 21:12|[logMaintenance.py.main]** WaLiPi5 is going to nap for 10 hours **
+2024-02-20 21:12|lifelogger.dEmain execution: 12.85
+2024-02-21 07:13|------------ boot ------------
+2024-02-21 07:13|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-21 07:15|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-21 09:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-21 09:54|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-21 12:07|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-21 14:50|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-21 14:55|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-21 17:05|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-21 19:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-21 19:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-21 22:03|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-22 00:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-22 00:51|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-22 03:01|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-22 04:25|lifelogger.dEmain execution: 21.20
+2024-02-22 04:26|[logMaintenance.py.main]** Changing usb0 setup **
+2024-02-22 04:46|------------ boot ------------
+2024-02-22 04:46|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-22 05:10|lifelogger.dEmain execution: 0.40
+2024-02-22 05:12|------------ boot ------------
+2024-02-22 05:13|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-22 05:24|lifelogger.dEmain execution: 0.20
+2024-02-22 05:26|[logMaintenance.py.main]** changed usb0 configuration method **
+2024-02-22 05:28|------------ boot ------------
+2024-02-22 05:29|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-22 06:19|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-22 06:25|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 0.9 hrs playtime **
+2024-02-22 08:35|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-22 11:18|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-22 11:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-22 13:01|wali_node.py| ** WaLI Noticed Undocking: success at battery 78%, docked for 1.6 hrs **
+2024-02-22 14:58|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-22 15:03|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.0 hrs playtime **
+2024-02-22 17:13|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-22 19:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-22 19:59|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-22 22:14|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-22 23:58|lifelogger.dEmain execution: 18.50
+2024-02-23 00:01|------------ boot ------------
+2024-02-23 00:02|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-23 00:51|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-23 00:56|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-23 03:06|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-23 05:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-23 05:52|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-23 08:03|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-23 10:43|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-23 10:48|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-23 12:00|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-23 12:00|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-23 12:58|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-23 15:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-23 15:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-23 17:54|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-23 20:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-23 20:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-23 22:51|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-24 01:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-24 01:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-24 03:46|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-24 06:26|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-24 06:32|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-24 08:43|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-24 11:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-24 11:26|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-24 13:41|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-24 15:19|lifelogger.dEmain execution: 39.30
+2024-02-24 15:20|[logMaintenance.py.main]** restarting for twin discovery server test **
+2024-02-24 15:22|------------ boot ------------
+2024-02-24 15:23|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-24 16:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-24 16:19|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-24 18:34|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-02-24 18:43|lifelogger.dEmain execution: 3.35
+2024-02-24 18:45|[logMaintenance.py.main]** rebooting to reset to default config **
+2024-02-24 18:47|------------ boot ------------
+2024-02-24 18:48|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-24 21:15|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-24 21:21|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-24 23:29|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-25 02:11|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-25 02:17|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-25 04:25|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-25 07:07|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-25 07:13|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-25 09:21|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-25 10:01|[logMaintenance.py.main]** Restarting Create3 to lower CPU usage **
+2024-02-25 10:08|lifelogger.dEmain execution: 15.35
+2024-02-25 10:13|------------ boot ------------
+2024-02-25 10:44|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-25 10:45|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-25 13:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-25 13:37|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-25 15:43|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-25 18:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-25 18:35|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-25 20:41|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-25 23:27|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-25 23:33|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-26 01:39|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-26 04:25|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-26 04:31|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-26 06:37|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-26 09:23|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-26 09:29|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-26 11:33|[logMaintenance.py.main]** restarting to take undock if isNotSleepTime feature **
+2024-02-26 11:36|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-26 11:37|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-26 12:29|[logMaintenance.py.main]** restarting docker to reset after testing **
+2024-02-26 12:30|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-26 14:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-26 14:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-26 16:30|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-26 19:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-26 19:19|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-26 21:27|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-26 21:37|lifelogger.dEmain execution: 35.40
+2024-02-26 21:37|[logMaintenance.py.main]** total power off to reset after rtabmap testing **
+2024-02-26 21:40|------------ boot ------------
+2024-02-26 21:41|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-26 21:45|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-26 21:48|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-27 00:34|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-27 00:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-27 08:02|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 7.85 hrs **
+2024-02-27 10:48|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-27 10:53|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-27 12:57|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-27 13:32|[logMaintenance.py.main]** Updated FW to H.2.5, rebuilt docker r2hdp **
+2024-02-27 13:33|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-27 13:35|wali_node.py| ** WaLI Undocking: success at battery 100% **
+2024-02-27 16:20|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-27 16:27|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-27 18:31|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-27 18:49|[logMaintenance.py.main]** updated robot_state parameters in app config to reduce load **
+2024-02-27 21:11|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-27 21:17|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-02-28 01:49|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-28 01:50|[logMaintenance.py.main]** rebuilt docker to add joint state pub and psmisc for killall **
+2024-02-28 01:52|[logMaintenance.py.main]** rtabmap still is taxing the Create3 heavily - built wali URDF to try next **
+2024-02-28 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 6.2 hrs **
+2024-02-28 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-28 10:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-02-28 12:22|[logMaintenance.py.main]** Restarting Create3 with publish_tfs: false ros2 topic list **
+2024-02-28 12:41|[logMaintenance.py.main]** Undock to try RTABmap **
+2024-02-28 12:41|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-02-28 12:42|wali_node.py| ** WaLI Noticed Undocking: success at battery 93%, docked for 2.0 hrs **
+2024-02-28 13:07|lifelogger.dEmain execution: 39.45
+2024-02-28 13:11|------------ boot ------------
+2024-02-28 13:12|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-28 13:45|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 0.5 hrs **
+2024-02-28 16:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-28 16:37|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-28 18:43|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-02-28 21:29|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-28 21:34|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-02-29 08:07|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 10.5 hrs **
+2024-02-29 10:07|[logMaintenance.py.main]** Restarting Create3 - not responding to /cmd_vel **
+2024-02-29 10:24|wali_node.py| ** WaLI Noticed Docking: success at battery 32% after 2.3 hrs playtime **
+2024-02-29 10:47|[logMaintenance.py.main]** Issued reset_pose **
+2024-02-29 10:54|wali_node.py| ** WaLI Noticed Undocking: success at battery 51%, docked for 0.5 hrs **
+2024-02-29 11:24|[logMaintenance.py.main]** Create3 ignoring /cmd_vel in safety_override full setting **
+2024-02-29 12:00|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-29 12:05|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.2 hrs playtime **
+2024-02-29 14:08|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-02-29 16:53|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-29 16:54|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-02-29 16:55|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-02-29 16:56|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-02-29 16:57|wali_node.py| ** WaLI Ready To Dock at battery 15% **
+2024-02-29 16:58|wali_node.py| ** WaLI Ready To Dock at battery 15% **
+2024-02-29 16:59|wali_node.py| ** WaLI Ready To Dock at battery 14% **
+2024-02-29 17:00|wali_node.py| ** WaLI Ready To Dock at battery 14% **
+2024-02-29 17:01|wali_node.py| ** WaLI Ready To Dock at battery 13% **
+2024-02-29 17:02|wali_node.py| ** WaLI Ready To Dock at battery 13% **
+2024-02-29 17:03|wali_node.py| ** WaLI Ready To Dock at battery 12% **
+2024-02-29 17:04|wali_node.py| ** WaLI Ready To Dock at battery 12% **
+2024-02-29 17:05|wali_node.py| ** WaLI Ready To Dock at battery 11% **
+2024-02-29 17:06|wali_node.py| ** WaLI Ready To Dock at battery 10% **
+2024-02-29 17:07|wali_node.py| ** WaLI Ready To Dock at battery 10% **
+2024-02-29 17:08|wali_node.py| ** WaLI Ready To Dock at battery 9% **
+2024-02-29 17:09|wali_node.py| ** WaLI Ready To Dock at battery 9% **
+2024-02-29 17:10|wali_node.py| ** WaLI Ready To Dock at battery 9% **
+2024-02-29 17:11|wali_node.py| ** WaLI Ready To Dock at battery 9% **
+2024-02-29 17:12|wali_node.py| ** WaLI Ready To Dock at battery 8% **
+2024-02-29 17:13|wali_node.py| ** WaLI Ready To Dock at battery 8% **
+2024-02-29 17:14|wali_node.py| ** WaLI Ready To Dock at battery 7% **
+2024-02-29 17:15|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:16|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:17|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:18|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:19|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:20|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:21|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:22|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:23|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:24|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:25|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:26|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:27|wali_node.py| ** WaLI Ready To Dock at battery 6% **
+2024-02-29 17:28|wali_node.py| ** WaLI Ready To Dock at battery 5% **
+2024-02-29 17:29|wali_node.py| ** WaLI Ready To Dock at battery 5% **
+2024-02-29 17:30|wali_node.py| ** WaLI Ready To Dock at battery 4% **
+2024-02-29 17:31|wali_node.py| ** WaLI Ready To Dock at battery 4% **
+2024-02-29 17:32|lifelogger.dEmain execution: 28.35
+2024-02-29 17:32|wali_node.py| ** WaLI Ready To Dock at battery 3% **
+2024-02-29 17:33|wali_node.py| ** WaLI Ready To Dock at battery 3% **
+2024-02-29 17:34|wali_node.py| ** WaLI Ready To Dock at battery 2% **
+2024-02-29 20:12|------------ boot ------------
+2024-02-29 20:13|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-02-29 20:21|[logMaintenance.py.main]** Wali ran down to 2% 3h26m firmware issue **
+2024-02-29 20:23|[logMaintenance.py.main]** Found safety_overide full issue, updating Create3 to H2.6 firmware **
+2024-02-29 21:47|[logMaintenance.py.main]** Restarting Create3 for safety_overide: full **
+2024-03-01 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.8 hrs **
+2024-03-01 10:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-01 10:51|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-01 12:56|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-01 15:36|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-01 15:41|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-03-01 17:50|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-01 20:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-01 20:37|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-03-02 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.4 hrs **
+2024-03-02 10:38|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-02 10:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-02 12:48|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-02 15:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-02 15:38|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-03-02 17:45|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-02 20:27|lifelogger.dEmain execution: 48.25
+2024-03-02 20:30|------------ boot ------------
+2024-03-02 20:31|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-02 20:48|[logMaintenance.py.main]** rebooted Create3 to test without Pi5 as ntp server **
+2024-03-02 20:59|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-03-02 21:00|wali_node.py| ** WaLI Noticed Undocking: success at battery 39%, docked for 0.5 hrs **
+2024-03-02 21:24|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-02 21:25|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-03-02 21:27|[logMaintenance.py.main]** test of RTABmap almost worked - Create3 still has seizures, but sometimes listens to cmd_vel **
+2024-03-02 21:29|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 0.5 hrs playtime **
+2024-03-03 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 10.5 hrs **
+2024-03-03 10:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-03 10:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-03 12:50|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-03 15:30|lifelogger.dEmain execution: 19.00
+2024-03-03 15:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-03 15:31|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-03 15:32|wali_node.py| ** WaLI Ready To Dock at battery 16% **
+2024-03-03 15:32|[logMaintenance.py.main]** Sleeping till floors mopping over **
+2024-03-03 16:32|------------ boot ------------
+2024-03-03 16:33|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-03 23:02|[logMaintenance.py.main]** wali node failed if dock_status not received before first wali_node callback **
+2024-03-03 23:03|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-04 08:03|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 9.0 hrs **
+2024-03-04 10:49|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-04 10:51|[logMaintenance.py.main]** Took Wali for a long stroll around the house used 3% of battery **
+2024-03-04 10:55|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-04 12:58|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-03-04 15:46|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-04 15:51|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-04 17:55|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-04 20:42|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-04 20:48|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-05 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.2 hrs **
+2024-03-05 10:39|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-05 10:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-05 12:46|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-03-05 15:33|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-05 15:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-05 17:43|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-05 20:30|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-05 20:36|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-06 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.4 hrs **
+2024-03-06 10:42|[logMaintenance.py.main]** Raised turbo enable joy drive to 0.406m/s max possible with Create3 in full override **
+2024-03-06 10:44|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-06 10:50|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-03-06 12:53|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-03-06 15:39|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-06 15:45|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-06 17:49|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-06 20:35|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-06 20:41|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-07 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.3 hrs **
+2024-03-07 10:47|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-07 10:52|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-07 12:54|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-03-07 15:40|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-07 15:46|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-07 17:50|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-07 20:36|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-07 20:42|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-08 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 11.3 hrs **
+2024-03-08 10:43|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-08 10:49|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-03-08 12:51|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-03-08 15:37|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-08 15:43|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-08 17:46|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.0 hrs **
+2024-03-08 20:32|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-08 20:38|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.9 hrs playtime **
+2024-03-08 22:17|lifelogger.dEmain execution: 125.75
+2024-03-08 22:18|[logMaintenance.py.main]** power down for backup **
+2024-03-08 22:49|------------ boot ------------
+2024-03-08 22:50|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 01:07|lifelogger.dEmain execution: 2.30
+2024-03-09 01:08|[logMaintenance.py.main]** power down to try republisher config **
+2024-03-09 01:09|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-03-09 01:11|------------ boot ------------
+2024-03-09 01:12|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 11:25|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 12:02|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 12:22|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-03-09 12:22|[logMaintenance.py.main]** Issued reset_pose **
+2024-03-09 12:23|wali_node.py| ** WaLI Noticed Docking: success at battery 76% after 0.4 hrs playtime **
+2024-03-09 12:33|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-03-09 12:34|wali_node.py| ** WaLI Noticed Undocking: success at battery 82%, docked for 0.2 hrs **
+2024-03-09 12:44|lifelogger.dEmain execution: 11.55
+2024-03-09 12:45|[logMaintenance.py.main]** Testing republisher without unicast segmentation **
+2024-03-09 12:54|------------ boot ------------
+2024-03-09 12:55|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 12:56|wali_node.py| ** WaLI Ready To Dock at battery 83% **
+2024-03-09 13:55|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 15:03|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-09 15:09|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.2 hrs playtime **
+2024-03-09 17:19|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2024-03-09 20:02|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-09 20:07|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.8 hrs playtime **
+2024-03-09 21:00|lifelogger.dEmain execution: 8.10
+2024-03-09 21:00|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-03-09 21:00|wali_node.py| ** WaLI Noticed Undocking: success at battery 50%, docked for 0.9 hrs **
+2024-03-09 21:01|[logMaintenance.py.main]** power off to try unicast again **
+2024-03-09 21:03|------------ boot ------------
+2024-03-09 21:04|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-09 21:42|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2024-03-09 21:42|wali_node.py| ** WaLI Noticed Docking: success at battery 67% after 0.6 hrs playtime **
+2024-03-09 21:42|[logMaintenance.py.main]** Issued reset_pose **
+2024-03-09 22:58|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-10 08:01|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 9.0 hrs **
+2024-03-10 10:34|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-10 10:39|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.6 hrs playtime **
+2024-03-10 11:02|[logMaintenance.py.main]** rebuilding Docker r2hdp **
+2024-03-10 12:03|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-10 12:43|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 0.7 hrs **
+2024-03-10 15:21|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-10 15:27|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-10 17:33|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-10 20:11|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-10 20:16|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-10 21:14|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2024-03-10 21:14|wali_node.py| ** WaLI Noticed Undocking: success at battery 52%, docked for 1.0 hrs **
+2024-03-10 22:17|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-10 22:23|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 1.2 hrs playtime **
+2024-03-11 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 9.6 hrs **
+2024-03-11 09:25|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-11 10:27|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-11 10:32|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.55 hrs playtime **
+2024-03-11 12:38|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-11 15:11|[logMaintenance.py.main]** added delays to start wali script - restarting **
+2024-03-11 15:13|wali_node.py| ** WaLI node started - Undock:99% Rotate:18% Dock:15% **
+2024-03-11 15:14|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-11 15:20|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.85 hrs playtime **
+2024-03-11 17:28|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2024-03-11 20:04|wali_node.py| ** WaLI Ready To Dock at battery 17% **
+2024-03-11 20:09|wali_node.py| ** WaLI dock goal result - Docking: success at battery 14% after 2.7 hrs playtime **
+2024-03-12 00:18|lifelogger.dEmain execution: 50.25
